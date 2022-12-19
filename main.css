@@ -1,0 +1,83 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+:root{
+    --light:#FAF8F1;
+    --semi-light: #FAEAB1;
+    --semi-dark:#E5BA73;
+    --dark:#C58940;
+    
+}
+body{
+    background-color: var(--light);
+}
+.section-padding{
+    padding: 100px 0;
+}
+.navbar{
+    background-color: var(--dark) ; 
+     
+}
+.rounded-circle{
+    width: 400px;
+   
+}
+.text{
+    text-align: justify;
+}
+#home{
+    margin-top: 100px;
+}
+section {
+   height: 675px;
+}
+.btn{
+    border: 3px solid var(--dark);
+    color: black;
+    background-color:var(--semi-dark);
+    transition: .4s;
+}
+.btn:hover{
+    background-color: var(--dark);
+    color: #FAF8F1;
+}
+.card-body{
+    background-color: var(--semi-dark);
+    border-radius: 4px;
+}
+
+.contact{
+    background-color: var(--dark);
+   
+    width: 100%;
+    height: 10%;
+}
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+      color:white;
+      background-color: var(--semi-dark);
+  }
+  
+  .fa-facebook {
+    background:var(--light);
+    color:var(--dark);
+  }
+  .fa-instagram {
+    background:var(--light);
+        color:var(--dark);
+  }
+  .fa-github{
+    background:var(--light);
+    color:var(--dark);
+  }
