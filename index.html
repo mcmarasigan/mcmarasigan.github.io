@@ -3,54 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>MC MARASIGAN PORTFOLIO</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MC Marasigan</title>
   </head>
-
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-      <div class="container">
-        <a class="navbar-brand" href="#"
-          ><b class="text-warning">MC</b> MARASIGAN</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#porfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-          </ul>
+    <div class="container">
+      <nav>
+        <div class="logo">MCM<b>.</b></div>
+        <ul class="navItems">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Portfolio</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="links">
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-github"></i></a>
         </div>
-      </div>
-    </nav>
+      </nav>
 
+<<<<<<< Updated upstream
     <section id="home" class="home section-padding">
       <div class="container">
         <div class="row">
@@ -118,34 +96,39 @@
                 </a>
               </div>
             </div>
+=======
+      <div class="wrapper">
+        <div class="col cols0">
+          <span class="topline">Hello</span>
+          <h1>I'm <span class="multitext">Coder</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum optio
+            fuga ab aut quia quis illo! A vitae autem deleniti odit, nam qui
+            suscipit? Id optio quaerat voluptatibus nihil maxime?
+          </p>
+          <div class="btns">
+            <button>About Me</button>
+>>>>>>> Stashed changes
+          </div>
+        </div>
+        <div class="cols cols1">
+          <div class="imgbox">
+            <img src="splash2.png" id="splash">
+            <img src="profile.png">
           </div>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="contact" class="contact section-padding">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="section-header text center pb-5">
-              <h1><b class="text-warning">MC</b> MARASIGAN</h1>
-              <p>
-                These are some of my works and let others know about myself.
-                Feel free to explore my website!
-              </p>
-              <a href="#" class="fa fa-facebook"></a>
-              <a href="#" class="fa fa-instagram"></a>
-              <a href="#" class="fa fa-github"></a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typingEffect = new Typed(".multitext",{
+        strings : ["coder","student","designer"],
+        loop:true,
+        typeSpeed : 100,
+        backSpeed : 80,
+        backDelay : 1500
+      })
+    </script>
   </body>
 </html>
