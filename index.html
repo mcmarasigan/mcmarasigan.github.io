@@ -1,65 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MC Marasigan</title>
-  </head>
-  <body>
-    <div class="container">
-      <nav>
-        <div class="logo">MCM<b>.</b></div>
-        <ul class="navItems">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <div class="links">
-          <a href="#"><i class="fa fa-instagram"></i></a>
-          <a href="#"><i class="fa fa-facebook"></i></a>
-          <a href="#"><i class="fa fa-github"></i></a>
-        </div>
-      </nav>
 
-      <div class="wrapper">
-        <div class="col cols0">
-          <span class="topline">Hello</span>
-          <h1>I'm <span class="multitext">Coder</span></h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum optio
-            fuga ab aut quia quis illo! A vitae autem deleniti odit, nam qui
-            suscipit? Id optio quaerat voluptatibus nihil maxime?
-          </p>
-          <div class="btns">
-            <button>About Me</button>
->>>>>>> Stashed changes
-          </div>
-        </div>
-        <div class="cols cols1">
-          <div class="imgbox">
-            <img src="splash2.png" id="splash">
-            <img src="profile.png">
-          </div>
-        </div>
-      </div>
-    </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio website of Ma. Clarissa Marasigan">
+    <title>Ma. Clarissa Marasigan | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
 
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-      var typingEffect = new Typed(".multitext",{
-        strings : ["coder","student","designer"],
-        loop:true,
-        typeSpeed : 100,
-        backSpeed : 80,
-        backDelay : 1500
-      })
-    </script>
-  </body>
+<body>
+    <header class="header">
+        <h1 class="logo">Ma. Clarissa Marasigan</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2 id="typewriter"></h2>
+            <p>Computer Scientist | Problem Solver | Innovator. Explore my work and skills as I strive to create efficient, user-centric solutions.</p>
+            <button class="btn" onclick="location.href='https://mcmarasigan.github.io/'">View Portfolio</button>
+        </div>
+    </section>
+
+    <section id="about" class="section about" data-aos="fade-up">
+        <h2>About Me</h2>
+        <p>I am a passionate Computer Scientist with skills in C++, Java, Python, Flutter, and more. I aim to create impactful solutions while continuously improving my expertise.</p>
+    </section>
+
+    <section id="projects" class="section projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" data-aos="flip-left">
+                <h3>POS - Cafe Royale</h3>
+                <p>A Point of Sale system for a coffee shop, developed in Java.</p>
+                <a href="https://github.com/mcmarasigan/finalproject">GitHub</a>
+            </div>
+            <div class="project-card" data-aos="flip-right">
+                <h3>PomoDo</h3>
+                <p>A task list app based on the Pomodoro method to boost productivity.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section resume">
+        <h2>Resume</h2>
+        <p>Click below to view or download my full resume:</p>
+        <a href="Ma_Clarissa_Marasigan_Resume.pdf" class="btn" download>Download Resume</a>
+        <iframe src="Ma_Clarissa_Marasigan_Resume.pdf" width="100%" height="600px" style="border: none; margin-top: 20px;"></iframe>
+    </section>
+
+    <section id="contact" class="section contact">
+        <h2>Contact</h2>
+        <form action="https://formsubmit.co/your-email" method="POST" class="contact-form">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Connect with me on <a href="mailto:qmcmarasigan@tip.edu.ph">Email</a> | <a href="https://github.com/mcmarasigan">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
 </html>
