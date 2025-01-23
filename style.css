@@ -6,6 +6,7 @@ body {
     padding: 0;
     background-color: #121212;
     color: #e0e0e0;
+    scroll-behavior: smooth;
 }
 
 
@@ -22,6 +23,7 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(8px);
+    transition: background-color 0.3s ease;
 }
 
 header h1 {
@@ -29,6 +31,10 @@ header h1 {
     font-weight: 600;
     color: #ffffff;
     margin: 0;
+}
+
+header:hover {
+    background-color: rgba(50, 50, 50, 0.9);
 }
 
 
@@ -67,6 +73,7 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #bb86fc;
     color: #121212;
+    box-shadow: 0px 2px 10px rgba(187, 134, 252, 0.8);
 }
 
 
@@ -83,37 +90,94 @@ nav ul li a:hover {
 
 /* Hero Section Styling */
 
-.hero-content {
+.hero {
+    background: linear-gradient(120deg, #bb86fc, #121212);
+    background-size: 200% 200%;
+    animation: gradientAnimation 5s ease infinite;
     text-align: center;
-    padding: 50px 0;
+    padding: 80px 0;
+    color: #fff;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .hero-content h2 {
-    font-size: 32px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 700;
     margin-bottom: 15px;
-    color: #ffffff;
 }
 
 .hero-content p {
     font-size: 18px;
     margin-bottom: 20px;
-    color: #d1d1d1;
 }
 
 .hero-content .btn {
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 12px 25px;
+    font-size: 18px;
     color: #121212;
     background-color: #bb86fc;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .hero-content .btn:hover {
-    background-color: #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(187, 134, 252, 0.8);
+}
+
+
+/* Skills Section */
+
+.skills {
+    text-align: center;
+    padding: 50px 10%;
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 10px;
+    margin: 20px auto;
+    color: #e0e0e0;
+}
+
+.skills h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #1e1e1e;
+    color: #bb86fc;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #bb86fc;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: default;
+}
+
+.skill-tag:hover {
+    background-color: #bb86fc;
     color: #121212;
 }
 
@@ -121,8 +185,12 @@ nav ul li a:hover {
 /* Contact Section */
 
 .contact {
-    padding: 50px 10%;
+    padding: 60px 10%;
     text-align: center;
+    background-color: rgba(30, 30, 30, 0.9);
+    border-radius: 10px;
+    margin: 20px auto;
+    color: #e0e0e0;
 }
 
 .contact h2 {
@@ -140,20 +208,19 @@ nav ul li a:hover {
     flex-direction: column;
     gap: 20px;
     padding: 20px;
-    background-color: rgba(30, 30, 30, 0.9);
+    background-color: rgba(20, 20, 20, 1);
     border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .contact-form .form-group {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    width: 100%;
+    gap: 10px;
 }
 
 .contact-form label {
-    margin-bottom: 8px;
     font-size: 16px;
     font-weight: 500;
     color: #e0e0e0;
@@ -162,7 +229,6 @@ nav ul li a:hover {
 .contact-form input,
 .contact-form textarea {
     width: 100%;
-    max-width: 100%;
     padding: 12px;
     border: 1px solid #444;
     border-radius: 5px;
@@ -170,6 +236,7 @@ nav ul li a:hover {
     color: #e0e0e0;
     font-size: 16px;
     box-sizing: border-box;
+    /* Ensure padding is included in width */
 }
 
 .contact-form input:focus,
@@ -186,13 +253,14 @@ nav ul li a:hover {
     color: #ffffff;
     background-color: #bb86fc;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 .contact-form button:hover {
     background-color: #9b67e0;
+    transform: scale(1.05);
 }
 
 
@@ -200,7 +268,7 @@ nav ul li a:hover {
 
 footer {
     text-align: center;
-    padding: 30px;
+    padding: 20px;
     background-color: #1e1e1e;
     color: #d1d1d1;
 }
@@ -214,9 +282,10 @@ footer a {
     color: #bb86fc;
     text-decoration: none;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 footer a:hover {
     color: #ffffff;
+    text-shadow: 0px 2px 8px rgba(187, 134, 252, 0.8);
 }
