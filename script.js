@@ -19,20 +19,29 @@ AOS.init({
 });
 
 // Dark/Light Mode Toggle
-const toggleButton = document.createElement("button");
-toggleButton.textContent = "Toggle Theme";
-toggleButton.classList.add("btn");
-toggleButton.style.position = "fixed";
-toggleButton.style.bottom = "20px";
-toggleButton.style.right = "20px";
-toggleButton.style.zIndex = "1000";
-document.body.appendChild(toggleButton);
+document.addEventListener("DOMContentLoaded", () => {
+    const themeToggle = document.createElement("button");
+    themeToggle.id = "theme-toggle";
+    themeToggle.classList.add("floating-btn");
+    themeToggle.textContent = "Dark Mode";
 
-toggleButton.addEventListener("click", () => {
-    document.body.classList.toggle("light-mode");
-    toggleButton.textContent = document.body.classList.contains("light-mode") ?
-        "Dark Mode" :
-        "Light Mode";
+    // Append the button to the body
+    document.body.appendChild(themeToggle);
+
+    // Apply saved theme on load
+    const savedTheme = localStorage.getItem("theme") || "dark";
+    if (savedTheme === "light") {
+        document.body.classList.add("light-mode");
+        themeToggle.textContent = "Light Mode";
+    }
+
+    // Add event listener to toggle theme
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+        const currentTheme = document.body.classList.contains("light-mode") ? "light" : "dark";
+        themeToggle.textContent = currentTheme === "dark" ? "Dark Mode" : "Light Mode";
+        localStorage.setItem("theme", currentTheme);
+    });
 });
 
 // Smooth Scroll for Navbar Links
@@ -47,14 +56,41 @@ document.querySelectorAll("a[href^='#']").forEach(anchor => {
 
 // Skill Progress Bars Animation
 const skillBars = document.querySelectorAll(".progress");
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.width = entry.target.getAttribute("data-width") || "0%";
-        }
-    });
-}, {
-    threshold: 0.5
-});
+if (skillBars.length > 0) {
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.width = entry.target.getAttribute("data-width") || "0%";
+                }
+            });
+        }, { threshold: 0.5 }
+    );
 
-skillBars.forEach(bar => observer.observe(bar));
+    skillBars.forEach(bar => observer.observe(bar));
+}
+
+// Modal for Image Preview
+function openModal(imageSrc) {
+    const modal = document.getElementById("imageModal");
+    const modalImage = document.getElementById("modalImage");
+    if (modal && modalImage) {
+        modal.style.display = "block";
+        modalImage.src = imageSrc;
+    }
+}
+
+function closeModal() {
+    const modal = document.getElementById("imageModal");
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Close modal when clicking outside of the modal image
+document.addEventListener("click", (e) => {
+    const modal = document.getElementById("imageModal");
+    if (e.target === modal) {
+        modal.style.display = "none";
+    }
+});

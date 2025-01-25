@@ -21,7 +21,7 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="#showcase">Showcase</a></li>
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -31,8 +31,18 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <h2 id="typewriter"></h2>
-            <p>Computer Scientist | Problem Solver | Innovator. Explore my work and skills as I strive to create efficient, user-centric solutions.</p>
+            <div class="avatar-container">
+                <img src="your-avatar-image.png" alt="Avatar" class="avatar">
+            </div>
+            <h2>Hello, It's Me</h2>
+            <h1>Ma. Clarissa Marasigan</h1>
+            <p id="typewriter" class="subtitle"></p>
+            <!-- Typewriter Element -->
+            <div class="social-links">
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-tiktok"></i></a>
+                <a href="#" target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            </div>
             <button class="btn" onclick="location.href='https://mcmarasigan.github.io/'">View Portfolio</button>
         </div>
     </section>
@@ -40,47 +50,66 @@
     <!-- About Section -->
     <section id="about" class="section about" data-aos="fade-right">
         <h2>About Me</h2>
-        <p>I am a passionate Computer Scientist with skills in C++, Java, Python, Flutter, and more. I aim to create impactful solutions while continuously improving my expertise.</p>
+        <p>
+            Hi! I'm a <strong>Computer Science student</strong> who loves learning new things and solving problems through technology. I enjoy working on projects that make a difference, whether it's a simple app or a useful system.
+        </p>
+        <p>
+            I have experience with <strong>C++</strong>, <strong>Java</strong>, <strong>Python</strong>, and <strong>Flutter</strong>, and I’m always looking to expand my skills. I’ve worked on projects like mobile apps and management systems that have
+            helped me understand how technology can solve real-world problems.
+        </p>
+        <p>
+            In my free time, I like exploring new tools, experimenting with <strong>DIY projects</strong>, and finding creative ways to approach challenges. I’m excited to keep learning and growing as I take on new opportunities and projects.
+        </p>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card" data-aos="flip-left">
+
+    <!-- Showcase Section -->
+    <section id="showcase" class="section showcase">
+        <h2>Showcase</h2>
+        <div class="showcase-grid">
+            <!-- BMS Project -->
+            <div class="showcase-card" data-aos="fade-up">
+                <img src="bmsproject-screenshot.jpg" alt="BMS Project Screenshot" onclick="openModal('bmsproject-screenshot.jpg')">
+                <h3>BMS Project</h3>
+                <p>A complete Booking Management System designed for efficient bookings and scheduling. Built with Java and MySQL.</p>
+                <a href="https://github.com/mcmarasigan/bmsproject" class="btn">GitHub</a>
+            </div>
+            <!-- POS Cafe Royale -->
+            <div class="showcase-card" data-aos="fade-up" data-aos-delay="100">
+                <img src="finalproject-screenshot.png" alt="POS Cafe Royale Screenshot" onclick="openModal('finalproject-screenshot.png')">
                 <h3>POS - Cafe Royale</h3>
-                <p>A Point of Sale system for a coffee shop, developed in Java.</p>
+                <p>An intuitive Point of Sale system for managing transactions, developed in Java.</p>
                 <a href="https://github.com/mcmarasigan/finalproject" class="btn">GitHub</a>
             </div>
-            <div class="project-card" data-aos="flip-right">
+            <!-- SafeSpace -->
+            <div class="showcase-card" data-aos="fade-up" data-aos-delay="200">
+                <img src="safespace-screenshot.jpg" alt="SafeSpace Screenshot" onclick="openModal('safespace-screenshot.jpg')">
+                <h3>SafeSpace</h3>
+                <p>A mobile application promoting mental health and well-being, built with Flutter and Firebase.</p>
+                <a href="https://github.com/mcmarasigan/SafeSpace" class="btn">GitHub</a>
+            </div>
+            <!-- PomoDo -->
+            <div class="showcase-card" data-aos="fade-up" data-aos-delay="300">
+                <img src="pomodo-screenshot.jpg" alt="PomoDo Screenshot" onclick="openModal('pomodo-screenshot.jpg')">
                 <h3>PomoDo</h3>
-                <p>A task list app based on the Pomodoro method to boost productivity.</p>
-                <a href="https://github.com/mcmarasigan/pomodo" class="btn">GitHub</a>
+                <p>An innovative task list app based on the Pomodoro technique for maximizing productivity.</p>
+                <a href="https://github.com/mcmarasigan/PomoDo" class="btn">GitHub</a>
             </div>
         </div>
     </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <h2>Skills</h2>
-        <div class="skills-list">
-            <span class="skill-tag">JavaScript</span>
-            <span class="skill-tag">Python</span>
-            <span class="skill-tag">Flutter</span>
-            <span class="skill-tag">Java</span>
-            <span class="skill-tag">C++</span>
-            <span class="skill-tag">Firebase</span>
-            <span class="skill-tag">MySQL</span>
-        </div>
-    </section>
-
 
     <!-- Resume Section -->
     <section id="resume" class="section resume">
         <h2>Resume</h2>
-        <p>Click below to view or download my full resume:</p>
-        <a href="Ma_Clarissa_Marasigan_Resume.pdf" class="btn" download>Download Resume</a>
-        <iframe src="Ma_Clarissa_Marasigan_Resume.pdf" width="100%" height="600px" style="border: none; margin-top: 20px;"></iframe>
+        <div class="resume-container">
+            <div class="resume-info">
+                <p>Click below to view or download my full resume:</p>
+                <a href="Ma_Clarissa_Marasigan_Resume.pdf" class="btn" download>Download Resume</a>
+            </div>
+            <div class="resume-preview">
+                <iframe src="Ma_Clarissa_Marasigan_Resume.pdf" title="Resume Preview"></iframe>
+            </div>
+        </div>
     </section>
 
     <!-- Contact Section -->
@@ -103,17 +132,22 @@
         </form>
     </section>
 
+    <!-- Modal for Image Preview -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+    </div>
+
     <!-- Footer -->
     <footer>
         <p>Connect with me on <a href="mailto:qmcmarasigan@tip.edu.ph">Email</a> | <a href="https://github.com/mcmarasigan">GitHub</a></p>
     </footer>
 
+    <!-- Floating Dark/Light Mode Toggle -->
+    <button id="theme-toggle" class="floating-btn">Dark Mode</button>
+
     <!-- Scripts -->
     <script src="script.js"></script>
-    <script>
-        // Initialize AOS for scroll animations
-        AOS.init();
-    </script>
 </body>
 
 </html>
