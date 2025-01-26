@@ -77,38 +77,53 @@
 
     <!-- Project Section -->
     <section id="showcase" class="section showcase">
-        <h2>Project</h2>
+        <h2>Projects</h2>
         <div class="showcase-grid">
-            <!-- BMS Project -->
+            <!-- Project 1 -->
             <div class="showcase-card" data-aos="fade-up">
-                <img src="bmsproject-screenshot.jpg" alt="BMS Project Screenshot" onclick="openModal('bmsproject-screenshot.jpg')">
+                <img src="bmsproject/bmsproject-screenshot1.jpg" alt="BMS Project Screenshot" onclick="openGallery(0)">
                 <h3>BMS Project</h3>
                 <p>A complete Booking Management System designed for efficient bookings and scheduling. Built with Java and MySQL.</p>
                 <a href="https://github.com/mcmarasigan/bmsproject" class="btn">GitHub</a>
             </div>
-            <!-- POS Cafe Royale -->
+
+            <!-- Project 2 -->
             <div class="showcase-card" data-aos="fade-up" data-aos-delay="100">
-                <img src="finalproject-screenshot.png" alt="POS Cafe Royale Screenshot" onclick="openModal('finalproject-screenshot.png')">
+                <img src="posproject/posproject-screenshot0.png" alt="POS Project Screenshot" onclick="openGallery(1)">
                 <h3>POS - Cafe Royale</h3>
                 <p>An intuitive Point of Sale system for managing transactions, developed in Java.</p>
                 <a href="https://github.com/mcmarasigan/finalproject" class="btn">GitHub</a>
             </div>
-            <!-- SafeSpace -->
+
+            <!-- Project 3 -->
             <div class="showcase-card" data-aos="fade-up" data-aos-delay="200">
-                <img src="safespace-screenshot.jpg" alt="SafeSpace Screenshot" onclick="openModal('safespace-screenshot.jpg')">
+                <img src="safespace/safespace-screenshot1.jpg" alt="SafeSpace Screenshot" onclick="openGallery(2)">
                 <h3>SafeSpace</h3>
                 <p>A mobile application promoting mental health and well-being, built with Flutter and Firebase.</p>
                 <a href="https://github.com/mcmarasigan/SafeSpace" class="btn">GitHub</a>
             </div>
-            <!-- PomoDo -->
+
+            <!-- Project 4 -->
             <div class="showcase-card" data-aos="fade-up" data-aos-delay="300">
-                <img src="pomodo-screenshot.jpg" alt="PomoDo Screenshot" onclick="openModal('pomodo-screenshot.jpg')">
+                <img src="pomodo/pomodo-screenshot1.jpg" alt="PomoDo Screenshot" onclick="openGallery(3)">
                 <h3>PomoDo</h3>
                 <p>An innovative task list app based on the Pomodoro technique for maximizing productivity.</p>
                 <a href="https://github.com/mcmarasigan/PomoDo" class="btn">GitHub</a>
             </div>
         </div>
     </section>
+
+    <!-- Modal for Project Gallery -->
+    <div id="galleryModal" class="modal">
+        <span class="close" onclick="closeGallery()">&times;</span>
+        <div class="gallery-content">
+            <img id="galleryImage" class="gallery-image" src="" alt="Gallery Image">
+            <p id="galleryDescription" class="gallery-description"></p>
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </div>
+
 
     <!-- Skill Section -->
     <section id="skills" class="section skills" data-aos="fade-up">
