@@ -1,15 +1,55 @@
 // Typewriter Effect
-const text = "Hi, I’m Clarissa, a Computer Scientist | Problem Solver | Innovator.";
-let index = 0;
+const descriptions = [
+    "a Computer Scientist",
+    "a Problem Solver",
+    "a Tech Enthusiast"
+];
+let descIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
 
 function type() {
     const typewriterElement = document.getElementById("typewriter");
     if (typewriterElement) {
-        typewriterElement.textContent = text.slice(0, index++);
-        if (index <= text.length) setTimeout(type, 100);
+        const currentText = descriptions[descIndex];
+
+        // Update displayed text
+        if (isDeleting) {
+            charIndex--;
+        } else {
+            charIndex++;
+        }
+
+        typewriterElement.textContent = currentText.slice(0, charIndex);
+
+        // Pause when full text is typed
+        if (!isDeleting && charIndex === currentText.length) {
+            setTimeout(() => {
+                isDeleting = true; // Start deleting after pause
+                type();
+            }, 1000); // Pause for 1 second after fully typing the text
+            return; // Prevent further immediate execution
+        }
+
+        // Pause when text is fully deleted
+        if (isDeleting && charIndex === 0) {
+            isDeleting = false;
+            descIndex = (descIndex + 1) % descriptions.length; // Move to next description
+            setTimeout(type, 500); // Pause before typing the next description
+            return; // Prevent further immediate execution
+        }
+
+        // Typing and deleting speeds
+        const speed = isDeleting ? 50 : 100;
+        setTimeout(type, speed); // Continue typing or deleting
     }
 }
+
+// Start the typewriter effect
 type();
+
+
+
 
 // Initialize AOS for Scroll Animations
 AOS.init({

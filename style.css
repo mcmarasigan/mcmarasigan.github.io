@@ -26,11 +26,12 @@ header {
     transition: background-color 0.3s ease;
 }
 
-header h1 {
+header a {
     font-size: 24px;
     font-weight: 600;
     color: #ffffff;
     margin: 0;
+    text-decoration: none;
 }
 
 header:hover {
@@ -95,6 +96,42 @@ nav ul li a:hover {
     overflow: hidden;
     text-align: center;
     color: #fff;
+}
+
+#typewriter {
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Center the content horizontally */
+    text-align: center;
+    /* Center the text */
+    gap: 15px;
+    /* Add spacing between items */
+    margin-top: 20px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    /* Align icon and text vertically */
+    gap: 10px;
+    /* Add spacing between the icon and text */
+    font-size: 16px;
+    /* Adjust font size */
+    color: #e0e0e0;
+}
+
+.contact-info-item i {
+    font-size: 20px;
+    /* Make the icon slightly larger */
+    color: #bb86fc;
+    /* Match the theme color */
 }
 
 
@@ -359,75 +396,41 @@ nav ul li a:hover {
 }
 
 
-/* Resume Section Styling */
+/* Contact Section Styling */
 
-.resume {
-    padding: 60px 10%;
+.contact {
     text-align: center;
-    background-color: rgba(30, 30, 30, 0.9);
+    padding: 50px 10%;
+    background-color: #121212;
+    color: #e0e0e0;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    margin: 20px auto;
-    max-width: 1200px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
-.resume h2 {
+.contact h2 {
     font-size: 28px;
     margin-bottom: 20px;
-    color: #bb86fc;
 }
 
-.resume p {
-    color: #e0e0e0;
-    margin-bottom: 20px;
+.contact p {
     font-size: 16px;
+    margin-bottom: 30px;
 }
 
-.resume a.btn {
-    padding: 12px 25px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #121212;
-    background-color: #bb86fc;
-    text-decoration: none;
-    border-radius: 50px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    box-shadow: 0 4px 10px rgba(187, 134, 252, 0.5);
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
-
-.resume a.btn:hover {
-    background-color: #9b67e0;
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(187, 134, 252, 0.8);
-}
-
-.resume iframe {
-    width: 100%;
-    height: 500px;
-    border: none;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-
-/* Responsive Styling for Resume */
-
-@media (max-width: 768px) {
-    .resume iframe {
-        height: 300px;
-    }
-}
-
-
-/* Contact Section */
 
 .contact-form {
-    max-width: 600px;
-    margin: 0 auto;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 15px;
 }
 
 .contact-form input,
@@ -439,7 +442,11 @@ nav ul li a:hover {
     background-color: #1e1e1e;
     color: #e0e0e0;
     font-size: 16px;
-    box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888;
 }
 
 .contact-form input:focus,
@@ -451,38 +458,52 @@ nav ul li a:hover {
 .contact-form button {
     padding: 12px;
     font-size: 16px;
-    font-weight: 600;
-    color: #121212;
+    font-weight: bold;
     background-color: #bb86fc;
+    color: #121212;
     border: none;
-    border-radius: 50px;
+    border-radius: 5px;
     cursor: pointer;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: transform 0.2s ease, background-color 0.3s ease;
 }
 
 .contact-form button:hover {
-    background-color: #9b67e0;
     transform: scale(1.05);
+    background-color: #9b67e0;
 }
 
 
-/* Responsive Design */
+/* Social Media Styling */
 
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-    nav ul {
-        flex-direction: column;
-        gap: 10px;
-    }
-    .showcase-grid {
-        grid-template-columns: 1fr;
-    }
-    .showcase-card img {
-        height: 180px;
-    }
+.social-media {
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+}
+
+.social-media p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    font-size: 35px;
+    letter-spacing: 20px;
+    color: #bb86fc;
+    text-decoration: none;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #9b67e0;
+    transform: scale(1.2);
 }
 
 
@@ -576,7 +597,7 @@ body.light-mode {
     background-color: #f8f4fc;
     /* Soft lavender background */
     color: #3c3c3c;
-    /* Pastel black for readability */
+    /* Global pastel black for readability */
 }
 
 body.light-mode header {
@@ -592,8 +613,8 @@ body.light-mode header h1 {
 }
 
 body.light-mode nav ul li a {
-    color: #5c5c7a;
-    /* Slightly darker pastel purple for links */
+    color: #3c3c3c;
+    /* Dark pastel black for navigation links */
 }
 
 body.light-mode nav ul li a:hover {
@@ -606,7 +627,7 @@ body.light-mode .section {
     background-color: #ffffff;
     /* Clean white for sections */
     color: #3c3c3c;
-    /* Pastel black for text */
+    /* Global pastel black for text */
     box-shadow: 0 4px 15px rgba(200, 200, 200, 0.3);
 }
 
@@ -632,37 +653,13 @@ body.light-mode .hero::before {
 }
 
 
-/* Heartbeat Animation Keyframes for Light Mode */
+/* Hero Content Text */
 
-@keyframes heartbeat-light {
-    0%,
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    30% {
-        transform: scale(1.05);
-        opacity: 0.9;
-    }
-    60% {
-        transform: scale(1.1);
-        opacity: 0.8;
-    }
-}
-
-body.light-mode .hero-content h2 {
-    color: #3c3c3c;
-    /* Dark pastel black for subheading */
-}
-
-body.light-mode .hero-content h1 {
-    color: #2c2c2c;
-    /* Slightly darker pastel black for main heading */
-}
-
+body.light-mode .hero-content h1,
+body.light-mode .hero-content h2,
 body.light-mode .subtitle {
-    color: #4c4c4c;
-    /* Medium gray for subtitles */
+    color: #3c3c3c;
+    /* Pastel black for all hero text */
 }
 
 body.light-mode .btn {
@@ -686,14 +683,10 @@ body.light-mode .showcase-card {
     box-shadow: 0 4px 15px rgba(200, 200, 200, 0.3);
 }
 
-body.light-mode .showcase-card h3 {
-    color: #6a609e;
-    /* Slightly darker pastel purple */
-}
-
+body.light-mode .showcase-card h3,
 body.light-mode .showcase-card p {
     color: #3c3c3c;
-    /* Darker text for readability */
+    /* Consistent pastel black for headings and paragraphs */
 }
 
 body.light-mode .contact-form input,
@@ -701,6 +694,7 @@ body.light-mode .contact-form textarea {
     background-color: #f9f8fc;
     /* Subtle pastel lavender */
     color: #3c3c3c;
+    /* Input text color */
     border: 1px solid #d5cfea;
 }
 
@@ -717,13 +711,13 @@ body.light-mode footer {
 }
 
 body.light-mode footer a {
-    color: #6a609e;
-    /* Link color in pastel purple */
+    color: #3c3c3c;
+    /* Footer link color */
 }
 
 body.light-mode footer a:hover {
-    color: #b8a3e3;
-    /* Slightly darker pastel purple */
+    color: #6a609e;
+    /* Slightly darker pastel purple for hover */
 }
 
 body.light-mode .floating-btn {
@@ -737,4 +731,18 @@ body.light-mode .floating-btn:hover {
     background-color: #ffa4a2;
     /* Slightly darker coral */
     box-shadow: 0 6px 15px rgba(255, 204, 203, 0.8);
+}
+
+
+/* Ensure all other sections use the same color */
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode p,
+body.light-mode span,
+body.light-mode li,
+body.light-mode a {
+    color: #3c3c3c;
+    /* Global pastel black */
 }
