@@ -181,7 +181,7 @@ const projects = [{
     },
     {
         title: "POS - Cafe Royale",
-        images: ["posproject-screenshot1.png"],
+        images: ["posproject/posproject-screenshot0.png"],
         descriptions: [
             "Point of Sale main interface.",
         ]
