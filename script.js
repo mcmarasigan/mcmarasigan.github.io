@@ -54,7 +54,7 @@ type();
 // Initialize AOS for Scroll Animations
 AOS.init({
     duration: 1200, // Animation duration
-    once: true, // Run animation only once
+    once: false, // Allow animations to repeat
     offset: 200 // Offset for triggering animations
 });
 
