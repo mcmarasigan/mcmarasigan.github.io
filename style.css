@@ -633,6 +633,10 @@ nav ul li a:hover {
     gap: 20px;
 }
 
+.contact-container .btn {
+    width: 105%;
+}
+
 .contact-form {
     flex: 1;
     min-width: 300px;
@@ -954,4 +958,66 @@ body.light-mode li,
 body.light-mode a {
     color: #3c3c3c;
     /* Global pastel black */
+}
+
+body.light-mode .modal {
+    background: rgba(255, 255, 255, .1);
+    /* Light background for modal */
+    color: #3c3c3c;
+    /* Darker text color */
+}
+
+body.light-mode .modal .gallery-container {
+    background: rgba(255, 255, 255, 0.4);
+    /* Light glass background */
+    backdrop-filter: blur(15px);
+    /* Keep the blur for glassmorphism effect */
+    box-shadow: 0 4px 15px rgba(200, 200, 200, 0.5);
+    /* Subtle shadow */
+}
+
+
+/* Partial Visibility of Adjacent Slides */
+
+body.light-mode .modal .gallery-container::before,
+body.light-mode .modal .gallery-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 15%;
+    background: linear-gradient(to right, rgb(255, 255, 255), transparent);
+    z-index: 2;
+}
+
+body.light-mode .modal .gallery-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgb(255, 255, 255), transparent);
+    /* Correct gradient for left */
+}
+
+body.light-mode .modal .gallery-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgb(255, 255, 255), transparent);
+    /* Correct gradient for right */
+}
+
+body.light-mode .modal .gallery-content {
+    color: #3c3c3c;
+    /* Ensure content text is dark */
+}
+
+body.light-mode .modal .gallery-description {
+    color: #3c3c3c;
+    /* Dark text for descriptions */
+}
+
+body.light-mode .gallery-nav {
+    background: rgba(0, 0, 0, 0.2);
+    /* Make navigation buttons slightly darker for contrast */
+}
+
+body.light-mode .gallery-nav:hover {
+    background: rgba(0, 0, 0, 0.4);
+    /* Darker hover effect for nav buttons */
 }
