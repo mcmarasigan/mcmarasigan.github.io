@@ -115,12 +115,14 @@
 
     <!-- Modal for Project Gallery -->
     <div id="galleryModal" class="modal">
-        <span class="close" onclick="closeGallery()">&times;</span>
-        <div class="gallery-content">
-            <img id="galleryImage" class="gallery-image" src="" alt="Gallery Image">
-            <p id="galleryDescription" class="gallery-description"></p>
-            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        <div class="gallery-overlay" onclick="closeGallery()"></div>
+        <div class="gallery-container">
+            <button class="gallery-nav prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="gallery-content">
+                <img id="galleryImage" class="gallery-image" src="" alt="Gallery Image">
+                <p id="galleryDescription" class="gallery-description"></p>
+            </div>
+            <button class="gallery-nav next" onclick="changeSlide(1)">&#10095;</button>
         </div>
     </div>
 

@@ -177,14 +177,16 @@ const projects = [{
             "Help Page - Offers assistance and support resources.",
             "FAQs Page - Provides answers to frequently asked questions.",
             "User’s Manual - Comprehensive guide for using the system."
-        ]
+        ],
+        aspectRatio: "16/9",
     },
     {
         title: "POS - Cafe Royale",
         images: ["posproject/posproject-screenshot0.png"],
         descriptions: [
             "Point of Sale main interface.",
-        ]
+        ],
+        aspectRatio: "4/3",
     },
     {
         title: "SafeSpace",
@@ -223,7 +225,8 @@ const projects = [{
             "System Logs Page - View detailed system logs for audit.",
             "System Updates Page - Display of app updates and patch notes.",
             "Backup and Restore Page - Data management for admin tasks."
-        ]
+        ],
+        aspectRatio: "3/4",
     },
     {
         title: "PomoDo",
@@ -238,14 +241,14 @@ const projects = [{
             "Pomodoro timer screen showing a 25-minute default timer with start button and settings.",
             "Timer settings page allowing users to adjust work and break durations.",
             "Pomodoro timer screen updated to reflect customized work and break durations."
-        ]
+        ],
+        aspectRatio: "1/1",
     }
 ];
 
 let currentProjectIndex = 0;
 let currentImageIndex = 0;
 
-// Open the gallery modal
 function openGallery(projectIndex) {
     currentProjectIndex = projectIndex;
     currentImageIndex = 0;
@@ -253,24 +256,36 @@ function openGallery(projectIndex) {
     document.getElementById("galleryModal").style.display = "flex";
 }
 
-// Close the gallery modal
 function closeGallery() {
     document.getElementById("galleryModal").style.display = "none";
 }
 
-// Change slide
 function changeSlide(direction) {
     const project = projects[currentProjectIndex];
-    currentImageIndex = (currentImageIndex + direction + project.images.length) % project.images.length;
-    updateGallery();
+    currentImageIndex += direction;
+
+    // Add smooth transition
+    const galleryImage = document.getElementById("galleryImage");
+    galleryImage.style.opacity = 0; // Fade out effect
+    setTimeout(() => {
+        updateGallery();
+        galleryImage.style.opacity = 1; // Fade in effect
+    }, 300); // Delay for smooth transition
 }
 
-// Update gallery content
 function updateGallery() {
     const project = projects[currentProjectIndex];
     const galleryImage = document.getElementById("galleryImage");
     const galleryDescription = document.getElementById("galleryDescription");
+    const prevArrow = document.querySelector(".gallery-nav.prev");
+    const nextArrow = document.querySelector(".gallery-nav.next");
 
+    // Update image and description
     galleryImage.src = project.images[currentImageIndex];
-    galleryDescription.textContent = project.descriptions[currentImageIndex] || "No description available.";
+    galleryDescription.textContent = project.descriptions[currentImageIndex];
+
+    // Show/hide arrows based on first/last page
+    prevArrow.style.display = currentImageIndex === 0 ? "none" : "flex";
+    nextArrow.style.display =
+        currentImageIndex === project.images.length - 1 ? "none" : "flex";
 }
