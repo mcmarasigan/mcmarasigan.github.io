@@ -112,8 +112,9 @@ function generateImageArray(folder, prefix, count, extension) {
 
 // Generate images for projects
 const bmsProjectImages = generateImageArray("bmsproject", "bmsproject-screenshot", 54, "jpg");
-const SafeSpaceImages = generateImageArray("safespace", "safespace-screenshot", 54, "jpg");
-const PomoDoImages = generateImageArray("pomodo", "pomodo-screenshot", 54, "jpg");
+const SafeSpaceImages = generateImageArray("safespace", "safespace-screenshot", 33, "jpg");
+const PomoDoImages = generateImageArray("pomodo", "pomodo-screenshot", 9, "jpg");
+const FreshEvalImages = generateImageArray("fresh-eval", "fresh-eval-screenshot", 8, "jpg");
 
 // Project Modal Gallery
 const projects = [{
@@ -243,7 +244,24 @@ const projects = [{
             "Pomodoro timer screen updated to reflect customized work and break durations."
         ],
         aspectRatio: "1/1",
+    },
+    {
+        title: "FRESHEVAL",
+    images: FreshEvalImages,
+    descriptions: [
+        "Launching the Application - Helpful tips on starting the app.",
+        "Camera Screen - Main interface for capturing or uploading vegetable images.",
+        "Scan Result Screen - Displays freshness status, vegetable type, quality rating, shelf life, and recommendations.",
+        "Scan History Screen - View past freshness evaluations with search and bookmark features.",
+        "Menu Drawer - Quick navigation including scanning, history, guides, developer info, and settings.",
+        "Settings Screen - Manage app preferences like display language and clearing cached data.",
+        "Help Screen - Provides user guides, FAQs, and tips to assist with using FRESHEVAL effectively and troubleshooting common issues.",
+        "Developers Screen - Displays information about the FRESHEVAL development team, including contact details for support and feedback."
+
+    ],
+    aspectRatio: "3/4"
     }
+  
 ];
 
 let currentProjectIndex = 0;
