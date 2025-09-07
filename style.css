@@ -183,9 +183,15 @@ nav ul li a:hover {
     z-index: 1;
 }
 
-.avatar-container {
-    position: relative;
-    margin-bottom: 20px;
+.avatar-container img {
+    width: 225px !important;
+    /* force the width */
+    height: 225px !important;
+    /* force the height */
+    border-radius: 50%;
+    /* optional: circle */
+    object-fit: cover;
+    /* keeps proportion */
 }
 
 .avatar {

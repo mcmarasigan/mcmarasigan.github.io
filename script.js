@@ -115,6 +115,8 @@ const bmsProjectImages = generateImageArray("bmsproject", "bmsproject-screenshot
 const SafeSpaceImages = generateImageArray("safespace", "safespace-screenshot", 33, "jpg");
 const PomoDoImages = generateImageArray("pomodo", "pomodo-screenshot", 9, "jpg");
 const FreshEvalImages = generateImageArray("fresh-eval", "fresh-eval-screenshot", 8, "jpg");
+const AQIAppImages = generateImageArray("airqualityfigma", "airquality-screenshot", 5, "png");
+const OnlyChefImages = generateImageArray("only-chef", "onlychef-screenshot", 14, "png");
 
 // Project Modal Gallery
 const projects = [{
@@ -260,7 +262,44 @@ const projects = [{
 
     ],
     aspectRatio: "3/4"
+    },
+
+    {
+    title: "Air Quality Index (AQI) App",
+    images: AQIAppImages,
+    descriptions: [
+        "Dashboard - Main screen with navigation buttons leading to Data Analysis, Model Training, Prediction, and About modules.",
+        "Data Analysis - Provides charts and graphs to explore historical and current AQI trends in Philippine cities.",
+        "Model Training - Simulated module showcasing how predictive models for AQI can be trained.",
+        "Prediction - Displays forecasted AQI levels and allows comparison with current values.",
+        "About - Contains project details, objectives, and developer information."
+    ],
+    aspectRatio: "3/4"
+    },
+
+    {
+    title: "OnlyChef",
+    images: OnlyChefImages,
+    descriptions: [
+        "Onboarding Screen - Welcome interface introducing the app with options to proceed.",
+        "Login Screen - Secure login page for existing users.",
+        "Register Screen - Registration form for creating a new account.",
+        "Home Screen - Central hub displaying featured chefs, recipes, and navigation.",
+        "Notifications Screen - Displays updates about subscriptions, streams, and new content.",
+        "Subscription Screen - Manage chef subscriptions and unlock premium content.",
+        "Live Stream Screen - Watch chefs cooking in real time with interactive options.",
+        "Add to Cart - Button within live stream to add featured ingredients to cart.",
+        "Chat Screen - Real-time chat interface with the chef during live sessions.",
+        "Profile Screen - View and edit user information, subscriptions, and account details.",
+        "Recipe List - Displays available recipes with option to set a meal plan.",
+        "ChefGPT - AI-powered assistant that answers cooking questions and suggests recipes.",
+        "Meal Plan Screen - Organize meals using selected recipes for daily or weekly planning.",
+        "Settings Screen - Manage app preferences, notifications, and account options."
+    ],
+    aspectRatio: "3/4"
     }
+
+    
   
 ];
 
