@@ -1,3 +1,6 @@
+import reactLogo from '../assets/react.svg'
+import viteLogo from '../assets/vite.svg'
+
 function Skills() {
     return (
         <section id="skills" className="section skills" data-aos="fade-up">
@@ -18,6 +21,14 @@ function Skills() {
                         <div className="skill-item">
                             <i className="fab fa-js skill-icon" style={{ color: '#F7DF1E' }}></i>
                             <p>JavaScript</p>
+                        </div>
+                        <div className="skill-item">
+                            <img src={reactLogo} alt="React" className="skill-icon" style={{ width: '40px', height: '40px' }} />
+                            <p>React</p>
+                        </div>
+                        <div className="skill-item">
+                            <img src={viteLogo} alt="Vite" className="skill-icon" style={{ width: '40px', height: '40px' }} />
+                            <p>Vite</p>
                         </div>
                         <div className="skill-item">
                             <i className="fas fa-coffee skill-icon" style={{ color: '#5382A1' }}></i>
@@ -69,6 +80,19 @@ function Skills() {
                         </div>
                         <div className="skill-item">
                             <img src="/images/bootstrap-icon.png" alt="Bootstrap" className="skill-icon" />
+                            <p>Bootstrap 5</p>
+                        </div>
+                        <div className="skill-item">
+                            <i className="fas fa-brain skill-icon" style={{ color: '#FF6F00' }}></i>
+                            <p>YOLOv8</p>
+                        </div>
+                        <div className="skill-item">
+                            <i className="fas fa-network-wired skill-icon" style={{ color: '#4CAF50' }}></i>
+                            <p>EfficientNetB7</p>
+                        </div>
+                        <div className="skill-item">
+                            <i className="fas fa-envelope-open-text skill-icon" style={{ color: '#E53935' }}></i>
+                            <p>MailHog</p>
                             <p>Bootstrap 5</p>
                         </div>
                     </div>
