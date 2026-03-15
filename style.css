@@ -7,6 +7,11 @@ body {
     background-color: #121212;
     color: #e0e0e0;
     scroll-behavior: smooth;
+    
+}
+
+* {
+    box-sizing: border-box;
 }
 
 
@@ -1026,4 +1031,158 @@ body.light-mode .gallery-nav {
 body.light-mode .gallery-nav:hover {
     background: rgba(0, 0, 0, 0.4);
     /* Darker hover effect for nav buttons */
+}
+/* ========================================= */
+/* MOBILE RESPONSIVENESS (Media Queries)     */
+/* ========================================= */
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+@media (max-width: 768px) {
+    /* Header/Navbar */
+    header {
+        padding: 15px 5%;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .navbar {
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        background-color: rgba(30, 30, 30, 0.95);
+        backdrop-filter: blur(10px);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: right 0.3s ease;
+        z-index: 1000;
+        box-shadow: -5px 0 15px rgba(0, 0, 0, 0.5);
+    }
+
+    .navbar.active {
+        right: 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    nav ul li {
+        margin-left: 0;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+    }
+
+    body.light-mode .navbar {
+        background-color: rgba(221, 209, 246, 0.95);
+    }
+    
+    body.light-mode .hamburger {
+        color: #3c3c3c;
+    }
+
+    /* Sections General */
+    .section {
+        padding: 40px 5%;
+    }
+
+    /* Hero Section */
+    .hero {
+        height: auto;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .hero-content h1 {
+        font-size: 28px;
+    }
+
+    .subtitle, .hero-content h2, .contact-info-item {
+        font-size: 16px;
+    }
+
+    .avatar-container img, .avatar {
+        width: 150px !important;
+        height: 150px !important;
+    }
+
+    /* About Section */
+    .about h2, .showcase h2, .skills h2, .contact h2 {
+        font-size: 24px;
+    }
+
+    .about p {
+        font-size: 15px;
+    }
+
+    /* Projects Showcase */
+    .showcase-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .showcase-card {
+        max-width: 100%;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .skill-item p {
+        font-size: 14px;
+    }
+
+    /* Contact Section */
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-form, .social-media {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .social-icons {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Extra small phones */
+    .hero-content h1 {
+        font-size: 24px;
+    }
+    
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .showcase-card img {
+        height: 180px;
+    }
+}
+
+
+html, body {
+    overflow-x: hidden;
+    position: relative;
 }
