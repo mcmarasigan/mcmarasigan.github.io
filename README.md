@@ -1,33 +1,16 @@
-# 👋 Hi, I'm Ma. Clarissa Marasigan  
+# React + Vite
 
-🎓 **Computer Science Graduate**  
-💻 **Lead Developer** in multiple academic and personal projects, specializing in **Mobile App Development**, **Machine Learning**, and **Software Engineering**.  
-🌱 Passionate about building impactful applications that combine technical innovation with real-world usability.  
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
----
+Currently, two official plugins are available:
 
-## 📌 About Me
-- 🎯 Interested in Flutter, Python, and AI-powered solutions.  
-- 🏆 Experience as **Lead Developer** in projects like:
-  - **FRESHEVAL** – Real-time vegetable freshness detection using YOLOv8 + EfficientNetB7.  
-  - **SafeSpace** – A mental health mobile app with real-time counseling chat and mood tracking.  
-  - **Bakery Management System (BMS)** – Java + MySQL system for managing bakery operations.  
-- 📍 Based in the Philippines.  
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
----
+## React Compiler
 
-## 🚀 Skills
-**Programming Languages:** Dart, Python, Java, SQL  
-**Frameworks & Tools:** Flutter, Firebase, YOLOv8, EfficientNetB7, Git, MySQL  
-**Specialties:** Mobile App Development, Machine Learning, UI/UX Design, Software Engineering  
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
----
+## Expanding the ESLint configuration
 
-## 📫 Contact Me
-- **Portfolio Website:** [mcmarasigan.github.io](https://mcmarasigan.github.io)  
-- **LinkedIn:** [Ma. Clarissa Marasigan](https://www.linkedin.com/in/ma-clarissa-marasigan-164576288/)  
-- **Email:** maclarissamarasigan@gmail.com  
-
----
-
-⭐ *Thanks for visiting my GitHub! Feel free to explore my repositories and connect with me for collaboration opportunities.*
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
