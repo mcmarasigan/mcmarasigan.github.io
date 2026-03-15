@@ -1,16 +1,32 @@
-# React + Vite
+# 👋 Hi, I'm Ma. Clarissa Marasigan
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎓 **Computer Science Graduate**  
+💻 **Lead Developer** in multiple academic and personal projects, specializing in Mobile App Development, Machine Learning, and Software Engineering.  
+🌱 Passionate about building impactful applications that combine technical innovation with real-world usability.
 
-Currently, two official plugins are available:
+🚀 **Portfolio Tech Stack:** This portfolio (`mcmarasigan.github.io`) is proudly built with **React**, **Vite JavaScript**, **Vanilla CSS**, and **GitHub Actions** for CI/CD deployment.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 About Me
+- 🎯 Interested in **Flutter**, **Python**, and **AI-powered solutions**.
+- 📍 Based in the **Philippines**.
+- 🏆 **Experience as Lead Developer in projects like:**
+  - **FRESHEVAL** – Real-time vegetable freshness detection using YOLOv8 + EfficientNetB7.
+  - **SafeSpace** – A mental health mobile app with real-time counseling chat and mood tracking.
+  - **Bakery Management System (BMS)** – Java + MySQL system for managing bakery operations.
 
-## React Compiler
+## 🚀 Skills
+- **Programming Languages:** Dart, Python, Java, JavaScript, C++, PHP, SQL
+- **Web Development & Frameworks:** React, Vite, HTML5, CSS3, Bootstrap 5, Laravel, Spring Boot, REST APIs
+- **Mobile App Development:** Flutter, React Native
+- **Database & Backend:** MySQL, Firebase, XAMPP
+- **Machine Learning / AI:** YOLOv8, EfficientNetB7
+- **Tools & Design:** Git, GitHub, VS Code, Figma, Canva, VirtualBox, Google Workspace
+- **Specialties:** Mobile App Development, Frontend Web Development, Machine Learning, UI/UX Design, Software Engineering
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 📫 Contact Me
+- **Portfolio Website:** [mcmarasigan.github.io](https://mcmarasigan.github.io)
+- **LinkedIn:** Ma. Clarissa Marasigan
+- **Email:** [maclarissamarasigan@gmail.com](mailto:maclarissamarasigan@gmail.com)
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+⭐ *Thanks for visiting my GitHub! Feel free to explore my repositories and connect with me for collaboration opportunities.*
