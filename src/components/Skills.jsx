@@ -93,7 +93,7 @@ function Skills() {
                         <div className="skill-item">
                             <i className="fas fa-envelope-open-text skill-icon" style={{ color: '#E53935' }}></i>
                             <p>MailHog</p>
-                            <p>Bootstrap 5</p>
+
                         </div>
                     </div>
                 </div>
