@@ -7,7 +7,7 @@ body {
     background-color: #121212;
     color: #e0e0e0;
     scroll-behavior: smooth;
-    
+
 }
 
 * {
@@ -161,15 +161,18 @@ nav ul li a:hover {
 /* Heartbeat Animation Keyframes */
 
 @keyframes heartbeat {
+
     0%,
     100% {
         transform: scale(1);
         opacity: 1;
     }
+
     30% {
         transform: scale(1.05);
         opacity: 0.8;
     }
+
     60% {
         transform: scale(1.1);
         opacity: 0.6;
@@ -609,6 +612,7 @@ nav ul li a:hover {
         opacity: 0;
         transform: scale(0.9);
     }
+
     to {
         opacity: 1;
         transform: scale(1);
@@ -1032,6 +1036,7 @@ body.light-mode .gallery-nav:hover {
     background: rgba(0, 0, 0, 0.4);
     /* Darker hover effect for nav buttons */
 }
+
 /* ========================================= */
 /* MOBILE RESPONSIVENESS (Media Queries)     */
 /* ========================================= */
@@ -1045,6 +1050,7 @@ body.light-mode .gallery-nav:hover {
 }
 
 @media (max-width: 768px) {
+
     /* Header/Navbar */
     header {
         padding: 15px 5%;
@@ -1091,7 +1097,7 @@ body.light-mode .gallery-nav:hover {
     body.light-mode .navbar {
         background-color: rgba(221, 209, 246, 0.95);
     }
-    
+
     body.light-mode .hamburger {
         color: #3c3c3c;
     }
@@ -1112,17 +1118,23 @@ body.light-mode .gallery-nav:hover {
         font-size: 28px;
     }
 
-    .subtitle, .hero-content h2, .contact-info-item {
+    .subtitle,
+    .hero-content h2,
+    .contact-info-item {
         font-size: 16px;
     }
 
-    .avatar-container img, .avatar {
+    .avatar-container img,
+    .avatar {
         width: 150px !important;
         height: 150px !important;
     }
 
     /* About Section */
-    .about h2, .showcase h2, .skills h2, .contact h2 {
+    .about h2,
+    .showcase h2,
+    .skills h2,
+    .contact h2 {
         font-size: 24px;
     }
 
@@ -1155,7 +1167,8 @@ body.light-mode .gallery-nav:hover {
         align-items: center;
     }
 
-    .contact-form, .social-media {
+    .contact-form,
+    .social-media {
         width: 100%;
         max-width: 100%;
     }
@@ -1166,11 +1179,12 @@ body.light-mode .gallery-nav:hover {
 }
 
 @media (max-width: 480px) {
+
     /* Extra small phones */
     .hero-content h1 {
         font-size: 24px;
     }
-    
+
     .btn {
         font-size: 16px;
         padding: 10px 20px;
@@ -1182,7 +1196,7 @@ body.light-mode .gallery-nav:hover {
 }
 
 
-html, body {
+body {
     overflow-x: hidden;
     position: relative;
 }
