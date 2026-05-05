@@ -8,6 +8,21 @@ function genImgs(folder, prefix, count, ext) {
 
 const projects = [
     {
+        title: 'TinyBaker PH',
+        thumb: '/tinybaker/logo.png',
+        desc: 'A modern, mobile-first, kawaii-themed landing page for a bakery. Features a structured pricing section with sticky filter chips, playful typography, and bespoke mascot illustrations to enhance brand identity. https://tinybakerph.vercel.app/',
+        link: 'https://github.com/mcmarasigan/TinybakerPH',
+        linkLabel: 'GitHub',
+        images: genImgs('tinybaker', 'tinybaker-screenshot', 5, 'png'),
+        captions: [
+            'Landing Page - Cute-themed hero section introducing TinyBaker PH.',
+            'About Section - The sweet story behind our bakery.',
+            'Pricing Section - Structured menu with sticky filter chips.',
+            'Why Choose Us - Highlights of our fresh and cute pastries.',
+            'Contact Section - Get in touch for custom orders.',
+        ],
+    },
+    {
         title: 'BMS Project',
         thumb: '/bmsproject/bmsproject-screenshot1.jpg',
         desc: 'A Java Spring Boot and MySQL-based Bakery Management System for handling inventory, orders, and sales. Designed to streamline bookings, scheduling, and overall bakery operations.',
@@ -198,21 +213,6 @@ const projects = [
             'ChefGPT - AI-powered assistant that answers cooking questions and suggests recipes.',
             'Meal Plan Screen - Organize meals using selected recipes for daily or weekly planning.',
             'Settings Screen - Manage app preferences, notifications, and account options.',
-        ],
-    },
-    {
-        title: 'TinyBaker PH',
-        thumb: '/tinybaker/logo.png',
-        desc: 'A modern, mobile-first, kawaii-themed landing page for a bakery. Features a structured pricing section with sticky filter chips, playful typography, and bespoke mascot illustrations to enhance brand identity. https://tinybakerph.vercel.app/',
-        link: 'https://github.com/mcmarasigan/TinybakerPH',
-        linkLabel: 'GitHub',
-        images: genImgs('tinybaker', 'tinybaker-screenshot', 5, 'png'),
-        captions: [
-            'Landing Page - Cute-themed hero section introducing TinyBaker PH.',
-            'About Section - The sweet story behind our bakery.',
-            'Pricing Section - Structured menu with sticky filter chips.',
-            'Why Choose Us - Highlights of our fresh and cute pastries.',
-            'Contact Section - Get in touch for custom orders.',
         ],
     },
 ]
