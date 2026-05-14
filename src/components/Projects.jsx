@@ -8,6 +8,38 @@ function genImgs(folder, prefix, count, ext) {
 
 const projects = [
     {
+        title: 'Lumière E-Commerce',
+        thumb: '/ecommerce/ecommerce_mockup.png',
+        desc: 'A full-stack minimalist e-commerce application built with React (frontend) and Laravel (backend). Features product browsing, cart management, and seamless backend API integration.',
+        link: 'https://github.com/mcmarasigan/ecommerce',
+        linkLabel: 'GitHub',
+        images: genImgs('ecommerce', 'ecommerce-screenshot', 5, 'png'),
+        captions: [
+            'Storefront - Main page showcasing featured products and clean UI.',
+            'Product Details - Detailed view of an individual product with descriptions.',
+            'Shopping Cart - Seamless cart management for users.',
+            'Checkout Process - Secure and straightforward checkout experience.',
+            'User Dashboard - Account settings and order history.',
+        ],
+    },
+    {
+        title: 'Gastos',
+        thumb: '/gastos/logo.png',
+        desc: 'A personal expense tracker and budget advisor designed for Filipinos, built with React, Supabase, and the Google Gemini API. It features AI expense logging, a dynamic dashboard, and an AI budget advisor.',
+        link: 'https://github.com/mcmarasigan/gastos',
+        linkLabel: 'GitHub',
+        images: genImgs('gastos', 'gastos-screenshot', 7, 'png'),
+        captions: [
+            'Login Page - Secure authentication to access your personal expense tracker.',
+            'Dashboard Overview - Quick glance at your total spent, remaining budget, and AI summary.',
+            'Dashboard Charts - Visual breakdown of expenses by category and daily spending trends.',
+            'Log Expense - Simply type your expenses in plain text and let AI categorize them automatically.',
+            'Transactions - A detailed history of all your logged expenses with easy management.',
+            'Budget Advisor - Get personalized, actionable financial advice powered by Gemini.',
+            'Settings - Manage your profile, monthly income, and budget preferences.',
+        ],
+    },
+    {
         title: 'TinyBaker PH',
         thumb: '/tinybaker/logo.png',
         desc: 'A modern, mobile-first, kawaii-themed landing page for a bakery. Features a structured pricing section with sticky filter chips, playful typography, and bespoke mascot illustrations to enhance brand identity. https://tinybakerph.vercel.app/',
