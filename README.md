@@ -25,7 +25,7 @@
 
 ## 📫 Contact Me
 - **Portfolio Website:** [mcmarasigan.github.io](https://mcmarasigan.github.io)
-- **LinkedIn:** Ma. Clarissa Marasigan
+- **LinkedIn:** [Ma. Clarissa Marasigan](https://www.linkedin.com/in/ma-clarissa-marasigan-164576288/)
 - **Email:** [maclarissamarasigan@gmail.com](mailto:maclarissamarasigan@gmail.com)
 
 ---
