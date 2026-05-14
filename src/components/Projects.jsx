@@ -25,7 +25,7 @@ const projects = [
     {
         title: 'Gastos',
         thumb: '/gastos/logo.png',
-        desc: 'A personal expense tracker and budget advisor designed for Filipinos, built with React, Supabase, and the Google Gemini API. It features AI expense logging, a dynamic dashboard, and an AI budget advisor.',
+        desc: 'A personal expense tracker and budget advisor designed for Filipinos, built with React, Supabase, and the Google Gemini API. It features AI expense logging, a dynamic dashboard, and an AI budget advisor. https://gastos-six-eta.vercel.app/login',
         link: 'https://github.com/mcmarasigan/gastos',
         linkLabel: 'GitHub',
         images: genImgs('gastos', 'gastos-screenshot', 7, 'png'),
