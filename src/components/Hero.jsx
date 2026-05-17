@@ -99,27 +99,28 @@ function Hero() {
                 .hero-right-header {
                     display: flex;
                     flex-direction: column;
-                    gap: 4px;
+                    gap: 6px;
                 }
 
-                .hero-hello {
-                    font-size: 5rem;
-                    font-weight: 800;
-                    line-height: 1;
+                .hero-greeting {
+                    font-size: 1.25rem;
+                    font-weight: 700;
+                    letter-spacing: 0.15em;
+                    text-transform: uppercase;
+                    color: #bb86fc;
                     margin: 0;
-                    background: linear-gradient(135deg, #bb86fc 0%, #9d4edd 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
-                    letter-spacing: -0.02em;
                     font-family: 'Poppins', sans-serif;
                 }
 
                 .hero-name {
-                    font-size: 2.8rem;
-                    font-weight: 600;
-                    color: #ffffff;
+                    font-size: 4.8rem;
+                    font-weight: 800;
+                    line-height: 1.05;
                     margin: 0;
-                    letter-spacing: -0.01em;
+                    background: linear-gradient(135deg, #ffffff 20%, #bb86fc 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    letter-spacing: -0.02em;
                     font-family: 'Poppins', sans-serif;
                 }
 
@@ -239,11 +240,12 @@ function Hero() {
                         order: 2;
                         width: 100%;
                     }
-                    .hero-hello {
-                        font-size: 3.8rem;
+                    .hero-greeting {
+                        font-size: 1.05rem;
+                        letter-spacing: 0.12em;
                     }
                     .hero-name {
-                        font-size: 2.2rem;
+                        font-size: 3.5rem;
                     }
                     .hero-code-card {
                         max-width: 100%;
@@ -293,14 +295,14 @@ function Hero() {
                     box-shadow: 0 0 35px rgba(123, 44, 191, 0.65), 0 0 70px rgba(123, 44, 191, 0.3);
                 }
 
-                body.light-mode .hero-hello {
-                    background: linear-gradient(135deg, #7b2cbf 0%, #3a86c8 100%);
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                body.light-mode .hero-greeting {
+                    color: #7b2cbf;
                 }
 
                 body.light-mode .hero-name {
-                    color: #2c2c2c;
+                    background: linear-gradient(135deg, #2c2c2c 25%, #7b2cbf 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
                 }
 
                 body.light-mode .hero-code-card {
@@ -339,12 +341,14 @@ function Hero() {
                 }
 
                 body.light-mode .hero-resume-btn {
-                    background: linear-gradient(135deg, #7b2cbf 0%, #3a86c8 100%);
+                    background: linear-gradient(135deg, #7b2cbf 0%, #9d4edd 100%);
                     color: #ffffff;
                     box-shadow: 0 4px 15px rgba(123, 44, 191, 0.25);
                 }
 
                 body.light-mode .hero-resume-btn:hover {
+                    background: linear-gradient(135deg, #9d4edd 0%, #7b2cbf 100%);
+                    transform: translateY(-2px);
                     box-shadow: 0 8px 25px rgba(123, 44, 191, 0.4);
                 }
 
@@ -377,8 +381,8 @@ function Hero() {
                 {/* Right Text / Snippet side */}
                 <div className="hero-right" data-aos="fade-left">
                     <div className="hero-right-header">
-                        <h1 className="hero-hello">Hello</h1>
-                        <h2 className="hero-name">I&apos;m Clarissa</h2>
+                        <span className="hero-greeting">HELLO, I&apos;M</span>
+                        <h1 className="hero-name">Clarissa</h1>
                     </div>
 
                     {/* Self Introduction Code Block */}

@@ -22,13 +22,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 15px 10%;
-    background-color: rgba(30, 30, 30, 0.9);
+    background-color: rgba(18, 18, 18, 0.45); /* Highly translucent dark glass */
     position: sticky;
     top: 0;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(8px);
-    transition: background-color 0.3s ease;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.06); /* Ultra-fine translucent separator */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 header a {
@@ -40,7 +41,7 @@ header a {
 }
 
 header:hover {
-    background-color: rgba(50, 50, 50, 0.9);
+    background-color: rgba(18, 18, 18, 0.6); /* Slightly more defined glass overlay on hover */
 }
 
 
@@ -48,6 +49,7 @@ header:hover {
 
 nav ul {
     display: flex;
+    align-items: center;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -796,27 +798,6 @@ footer .btn:hover {
     }
 }
 
-.floating-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 12px 20px;
-    font-size: 16px;
-    background-color: #bb86fc;
-    color: #121212;
-    border: none;
-    border-radius: 50px;
-    box-shadow: 0 4px 10px rgba(187, 134, 252, 0.5);
-    cursor: pointer;
-    z-index: 1000;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.floating-btn:hover {
-    background-color: #9b67e0;
-    transform: scale(1.05);
-    box-shadow: 0 6px 15px rgba(187, 134, 252, 0.8);
-}
 
 
 /* Light Mode Styles */
@@ -948,18 +929,43 @@ body.light-mode footer a:hover {
     /* Slightly darker pastel purple for hover */
 }
 
-body.light-mode .floating-btn {
-    background-color: #ffcccb;
-    /* Light pastel coral button */
-    color: #ffffff;
-    box-shadow: 0 4px 10px rgba(255, 204, 203, 0.5);
+body.light-mode header {
+    background-color: rgba(248, 244, 252, 0.45); /* Highly translucent light lavender/white glass */
+    box-shadow: none;
+    border-bottom: 1px solid rgba(123, 44, 191, 0.08); /* Fine pastel violet separator */
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
-body.light-mode .floating-btn:hover {
-    background-color: #ffa4a2;
-    /* Slightly darker coral */
-    box-shadow: 0 6px 15px rgba(255, 204, 203, 0.8);
+body.light-mode header:hover {
+    background-color: rgba(248, 244, 252, 0.65); /* Slightly more defined light glass on hover */
 }
+
+body.light-mode header a {
+    color: #2c2c2c; /* Clean dark charcoal for logo link */
+}
+
+body.light-mode header a:hover {
+    color: #7b2cbf; /* Elegant brand purple on logo hover */
+}
+
+body.light-mode nav ul li a {
+    color: #3c3c3c; /* Professional charcoal for links */
+    background-color: transparent;
+    transition: all 0.3s ease;
+}
+
+body.light-mode nav ul li a:hover {
+    background-color: #7b2cbf; /* Rich brand purple background */
+    color: #ffffff !important; /* Crisp white text on hover */
+    box-shadow: 0px 4px 15px rgba(123, 44, 191, 0.25); /* Elegant soft brand shadow */
+}
+
+body.light-mode .hamburger {
+    color: #2c2c2c; /* Dark hamburger icon for readability */
+}
+
+
 
 
 /* Ensure all other sections use the same color */

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import ThemeToggle from './ThemeToggle'
 
 function Navbar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -30,6 +31,7 @@ function Navbar() {
                     <li><a href="#showcase" onClick={(e) => handleScroll(e, '#showcase')}>Project</a></li>
                     <li><a href="#skills" onClick={(e) => handleScroll(e, '#skills')}>Skills &amp; Tools</a></li>
                     <li><a href="#contact" onClick={(e) => handleScroll(e, '#contact')}>Contact</a></li>
+                    <li className="theme-toggle-li"><ThemeToggle /></li>
                 </ul>
             </nav>
         </header>
