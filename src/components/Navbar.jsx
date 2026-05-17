@@ -28,8 +28,7 @@ function Navbar() {
             <nav className={`navbar ${isMenuOpen ? 'active' : ''}`}>
                 <ul>
                     <li><a href="#about" onClick={(e) => handleScroll(e, '#about')}>About</a></li>
-                    <li><a href="#showcase" onClick={(e) => handleScroll(e, '#showcase')}>Project</a></li>
-                    <li><a href="#skills" onClick={(e) => handleScroll(e, '#skills')}>Skills &amp; Tools</a></li>
+                    <li><a href="#showcase" onClick={(e) => handleScroll(e, '#showcase')}>Projects</a></li>
                     <li><a href="#contact" onClick={(e) => handleScroll(e, '#contact')}>Contact</a></li>
                     <li className="theme-toggle-li"><ThemeToggle /></li>
                 </ul>

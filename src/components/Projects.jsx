@@ -10,6 +10,7 @@ const projects = [
     {
         title: 'Lumière E-Commerce',
         thumb: '/ecommerce/ecommerce-screenshot1.png',
+        tag: 'Full-Stack Dev',
         desc: 'A full-stack minimalist e-commerce application built with React (frontend) and Laravel (backend). Features product browsing, cart management, and seamless backend API integration.',
         link: 'https://github.com/mcmarasigan/ecommerce',
         linkLabel: 'GitHub',
@@ -28,7 +29,8 @@ const projects = [
     {
         title: 'Gastos',
         thumb: '/gastos/logo.png',
-        desc: 'A personal expense tracker and budget advisor designed for Filipinos, built with React, Supabase, and the Google Gemini API. It features AI expense logging, a dynamic dashboard, and an AI budget advisor. \n https://gastos-six-eta.vercel.app/',
+        tag: 'AI & Full-Stack',
+        desc: 'A personal expense tracker and budget advisor designed for Filipinos, built with React, Supabase, and the Google Gemini API. It features AI expense logging, a dynamic dashboard, and an AI budget advisor.',
         link: 'https://github.com/mcmarasigan/gastos',
         linkLabel: 'GitHub',
         images: genImgs('gastos', 'gastos-screenshot', 7, 'png'),
@@ -45,7 +47,8 @@ const projects = [
     {
         title: 'TinyBaker PH',
         thumb: '/tinybaker/logo.png',
-        desc: 'A modern, mobile-first, kawaii-themed landing page for a bakery. Features a structured pricing section with sticky filter chips, playful typography, and bespoke mascot illustrations to enhance brand identity. https://tinybakerph.vercel.app/',
+        tag: 'Web Dev & Design',
+        desc: 'A modern, mobile-first, kawaii-themed landing page for a bakery. Features a structured pricing section with sticky filter chips, playful typography, and bespoke mascot illustrations to enhance brand identity.',
         link: 'https://github.com/mcmarasigan/TinybakerPH',
         linkLabel: 'GitHub',
         images: genImgs('tinybaker', 'tinybaker-screenshot', 5, 'png'),
@@ -60,6 +63,7 @@ const projects = [
     {
         title: 'BMS Project',
         thumb: '/bmsproject/bmsproject-screenshot1.jpg',
+        tag: 'Java & Spring Boot',
         desc: 'A Java Spring Boot and MySQL-based Bakery Management System for handling inventory, orders, and sales. Designed to streamline bookings, scheduling, and overall bakery operations.',
         link: 'https://github.com/mcmarasigan/bmsproject',
         linkLabel: 'GitHub',
@@ -125,6 +129,7 @@ const projects = [
     {
         title: 'POS - Cafe Royale',
         thumb: '/posproject/posproject-screenshot0.png',
+        tag: 'Java & MySQL',
         desc: 'A Java-based Point of Sale system designed for managing transactions, orders, and sales. Integrated with MySQL for database management and JasperReports for generating receipts and detailed sales reports.',
         link: 'https://github.com/mcmarasigan/finalproject',
         linkLabel: 'GitHub',
@@ -134,6 +139,7 @@ const projects = [
     {
         title: 'SafeSpace',
         thumb: '/safespace/safespace-screenshot1.jpg',
+        tag: 'Mobile & Firebase',
         desc: 'A mobile application promoting mental health and well-being, built with Flutter and Firebase.',
         link: 'https://github.com/mcmarasigan/SafeSpace',
         linkLabel: 'GitHub',
@@ -177,6 +183,7 @@ const projects = [
     {
         title: 'PomoDo',
         thumb: '/pomodo/pomodo-screenshot1.jpg',
+        tag: 'React Native App',
         desc: 'A React Native mobile app that helps users manage tasks using the Pomodoro technique. Includes task tracking, timers, and notifications to boost focus and productivity.',
         link: 'https://github.com/mcmarasigan/PomoDo',
         linkLabel: 'GitHub',
@@ -196,7 +203,8 @@ const projects = [
     {
         title: 'FRESHEVAL',
         thumb: '/fresh-eval/fresheval-thumbnail.png',
-        desc: 'A Flutter-based mobile app for real-time freshness evaluation of vegetables, leveraging YOLOv8 and EfficientNetB7 for image classification. The AI model was trained in Python using TensorFlow, aiming to reduce food waste and promote sustainable consumption.',
+        tag: 'AI & Mobile',
+        desc: 'A Flutter-based mobile app for real-time freshness evaluation of vegetables, leveraging YOLOv8 and EfficientNetB7 for image classification. The AI model was trained in Python using TensorFlow, aiming to reduce food waste.',
         link: 'https://github.com/mcmarasigan/fresheval',
         linkLabel: 'GitHub',
         images: genImgs('fresh-eval', 'fresh-eval-screenshot', 8, 'jpg'),
@@ -212,9 +220,10 @@ const projects = [
         ],
     },
     {
-        title: 'Air Quality Index (AQI) App',
+        title: 'Air Quality Index App',
         thumb: '/airqualityfigma/airquality-screenshot1.png',
-        desc: 'A Figma-based UI/UX design for an application that analyzes and predicts Air Quality Index (AQI) in Philippine cities. The design includes modules for Dashboard visualization, Data Analysis, Model Training, Prediction, and an About section, focusing on user-friendly navigation and informative data presentation.',
+        tag: 'UI/UX Figma Design',
+        desc: 'A Figma-based UI/UX design for an application that analyzes and predicts Air Quality Index (AQI) in Philippine cities, focusing on user-friendly navigation and informative data presentation.',
         link: 'https://www.figma.com/design/YcUTeAyIwPQuX1FU7EMxLp/Air-Quality-Index?node-id=2-3&t=9isC5PpVdJt9dySD-1',
         linkLabel: 'Figma',
         images: genImgs('airqualityfigma', 'airquality-screenshot', 5, 'png'),
@@ -229,25 +238,26 @@ const projects = [
     {
         title: 'OnlyChef',
         thumb: '/only-chef/onlychef-thumbnail.png',
-        desc: 'A Figma-based UI/UX design for an innovative cooking and subscription platform. The app features user login, chef subscription, and live streaming where chefs demonstrate cooking. Subscribers gain access to exclusive recipes, an OnlyGrocery section for curated ingredients, and ChefGPT integration for personalized cooking assistance.',
+        tag: 'UI/UX Figma Design',
+        desc: 'A Figma-based UI/UX design for an innovative cooking subscription platform. Features user login, chef subscription, live streaming, ChefGPT cooking assistant, and curated grocery cart integration.',
         link: 'https://www.figma.com/design/Pp70FwHdM9Fphi4gl7eJVr/Only-Chef?node-id=18-760&t=ouL0ISpdxbV7gQ0e-1',
         linkLabel: 'Figma',
         images: genImgs('only-chef', 'onlychef-screenshot', 14, 'png'),
         captions: [
-            'Onboarding Screen - Welcome interface introducing the app with options to proceed.',
+            'Onboarding Screen - Welcome interface introducing the app.',
             'Login Screen - Secure login page for existing users.',
             'Register Screen - Registration form for creating a new account.',
             'Home Screen - Central hub displaying featured chefs, recipes, and navigation.',
-            'Notifications Screen - Displays updates about subscriptions, streams, and new content.',
+            'Notifications Screen - Displays updates about subscriptions and streams.',
             'Subscription Screen - Manage chef subscriptions and unlock premium content.',
-            'Live Stream Screen - Watch chefs cooking in real time with interactive options.',
+            'Live Stream Screen - Watch chefs cooking in real time.',
             'Add to Cart - Button within live stream to add featured ingredients to cart.',
-            'Chat Screen - Real-time chat interface with the chef during live sessions.',
-            'Profile Screen - View and edit user information, subscriptions, and account details.',
-            'Recipe List - Displays available recipes with option to set a meal plan.',
-            'ChefGPT - AI-powered assistant that answers cooking questions and suggests recipes.',
-            'Meal Plan Screen - Organize meals using selected recipes for daily or weekly planning.',
-            'Settings Screen - Manage app preferences, notifications, and account options.',
+            'Chat Screen - Real-time chat interface with the chef.',
+            'Profile Screen - View and edit user information and subscriptions.',
+            'Recipe List - Displays available recipes.',
+            'ChefGPT - AI-powered assistant that answers cooking questions.',
+            'Meal Plan Screen - Organize meals using selected recipes.',
+            'Settings Screen - Manage app preferences.',
         ],
     },
 ]
@@ -266,29 +276,372 @@ function Projects() {
         setActiveProject(null)
     }
 
+    // Split projects into two columns (Left: Evens, Right: Odds)
+    const leftColumnProjects = projects.filter((_, i) => i % 2 === 0)
+    const rightColumnProjects = projects.filter((_, i) => i % 2 !== 0)
+
     return (
-        <section id="showcase" className="section showcase">
-            <h2>Projects</h2>
+        <section id="showcase" className="showcase">
+            <style>{`
+                .showcase {
+                    padding: 90px 10% 120px;
+                    background: transparent !important; /* Fully blend into custom gradients */
+                    box-shadow: none !important;
+                    border-radius: 0 !important;
+                    width: 100%;
+                    max-width: 1300px;
+                    margin: 0 auto;
+                    position: relative;
+                }
+
+                .showcase-header-block {
+                    text-align: left;
+                    margin-bottom: 70px;
+                    max-width: 750px;
+                    position: relative;
+                    z-index: 5;
+                }
+
+                .showcase-pre-title {
+                    font-size: 0.85rem;
+                    font-weight: 700;
+                    letter-spacing: 0.2em;
+                    text-transform: uppercase;
+                    color: #bb86fc;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 8px;
+                    margin-bottom: 15px;
+                }
+
+                body.light-mode .showcase-pre-title {
+                    color: #7b2cbf;
+                }
+
+                .showcase-title {
+                    font-size: 3.2rem;
+                    font-weight: 800;
+                    line-height: 1.15;
+                    color: #ffffff;
+                    margin: 0 0 20px 0;
+                    letter-spacing: -0.02em;
+                }
+
+                body.light-mode .showcase-title {
+                    color: #2c2c2c;
+                }
+
+                .showcase-description {
+                    font-size: 1.1rem;
+                    line-height: 1.6;
+                    color: #b3b3b3;
+                    margin: 0;
+                }
+
+                body.light-mode .showcase-description {
+                    color: #555555;
+                }
+
+                .showcase-grid {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 60px;
+                    align-items: start;
+                    width: 100%;
+                    position: relative;
+                    z-index: 5;
+                }
+
+                .showcase-column {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 70px;
+                }
+
+                .showcase-column-right {
+                    margin-top: 100px; /* Stunning staggered layout shift on desktop */
+                }
+
+                .showcase-card {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    background: transparent !important;
+                    box-shadow: none !important;
+                    border: none !important;
+                    padding: 0 !important;
+                    width: 100%;
+                    cursor: default;
+                }
+
+                .showcase-img-wrapper {
+                    width: 100%;
+                    height: 350px;
+                    border-radius: 16px;
+                    overflow: hidden;
+                    border: 1px solid rgba(255, 255, 255, 0.07);
+                    background: rgba(255, 255, 255, 0.01);
+                    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+                    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+                    cursor: pointer;
+                    margin-bottom: 22px;
+                    position: relative;
+                }
+
+                body.light-mode .showcase-img-wrapper {
+                    border: 1px solid rgba(123, 44, 191, 0.06);
+                    background: rgba(0, 0, 0, 0.005);
+                    box-shadow: 0 12px 40px rgba(123, 44, 191, 0.03);
+                }
+
+                .showcase-img-wrapper:hover {
+                    transform: translateY(-6px);
+                    border-color: rgba(187, 134, 252, 0.3);
+                    box-shadow: 0 20px 45px rgba(187, 134, 252, 0.2);
+                }
+
+                body.light-mode .showcase-img-wrapper:hover {
+                    border-color: rgba(123, 44, 191, 0.3);
+                    box-shadow: 0 20px 45px rgba(123, 44, 191, 0.12);
+                }
+
+                .showcase-img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+                }
+
+                .showcase-img-wrapper:hover .showcase-img {
+                    transform: scale(1.04);
+                }
+
+                .showcase-card h3 {
+                    font-size: 1.65rem;
+                    font-weight: 700;
+                    margin: 0 0 10px 0;
+                    color: #ffffff;
+                    text-align: left;
+                    letter-spacing: -0.015em;
+                    transition: color 0.3s ease;
+                }
+
+                body.light-mode .showcase-card h3 {
+                    color: #2c2c2c;
+                }
+
+                .showcase-card:hover h3 {
+                    color: #bb86fc;
+                }
+
+                body.light-mode .showcase-card:hover h3 {
+                    color: #7b2cbf;
+                }
+
+                .showcase-card p {
+                    font-size: 0.95rem;
+                    line-height: 1.6;
+                    color: #a0a0a0;
+                    margin: 0 0 24px 0;
+                    text-align: left;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    max-width: 92%;
+                }
+
+                body.light-mode .showcase-card p {
+                    color: #555555;
+                }
+
+                .showcase-card-footer {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    border-top: 1px solid rgba(255, 255, 255, 0.05);
+                    padding-top: 18px;
+                }
+
+                body.light-mode .showcase-card-footer {
+                    border-top: 1px solid rgba(0, 0, 0, 0.05);
+                }
+
+                .showcase-tag {
+                    background: rgba(187, 134, 252, 0.07);
+                    color: #bb86fc;
+                    border: 1px solid rgba(187, 134, 252, 0.12);
+                    padding: 6px 14px;
+                    border-radius: 50px;
+                    font-size: 0.74rem;
+                    font-weight: 600;
+                    text-transform: uppercase;
+                    letter-spacing: 0.07em;
+                }
+
+                body.light-mode .showcase-tag {
+                    background: rgba(123, 44, 191, 0.05);
+                    color: #7b2cbf;
+                    border: 1px solid rgba(123, 44, 191, 0.1);
+                }
+
+                .showcase-link {
+                    color: #bb86fc;
+                    font-weight: 600;
+                    text-decoration: none;
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 6px;
+                    font-size: 0.88rem;
+                    transition: all 0.3s ease;
+                }
+
+                body.light-mode .showcase-link {
+                    color: #7b2cbf;
+                }
+
+                .showcase-link:hover {
+                    color: #ffffff;
+                    transform: translateX(4px);
+                }
+
+                body.light-mode .showcase-link:hover {
+                    color: #2c2c2c;
+                }
+
+                .showcase-link i {
+                    font-size: 0.8rem;
+                }
+
+                @media (max-width: 900px) {
+                    .showcase-grid {
+                        gap: 40px;
+                    }
+                    .showcase-column {
+                        gap: 50px;
+                    }
+                    .showcase-column-right {
+                        margin-top: 60px;
+                    }
+                    .showcase-img-wrapper {
+                        height: 290px;
+                    }
+                }
+
+                @media (max-width: 768px) {
+                    .showcase {
+                        padding: 70px 6% 90px;
+                    }
+
+                    .showcase-title {
+                        font-size: 2.5rem;
+                    }
+
+                    .showcase-grid {
+                        grid-template-columns: 1fr;
+                        gap: 50px;
+                    }
+
+                    .showcase-column {
+                        gap: 50px;
+                    }
+
+                    .showcase-column-right {
+                        margin-top: 0;
+                    }
+
+                    .showcase-img-wrapper {
+                        height: 260px;
+                        margin-bottom: 18px;
+                    }
+
+                    .showcase-card p {
+                        max-width: 100%;
+                    }
+                }
+            `}</style>
+
+            <div className="showcase-header-block" data-aos="fade-up">
+                <span className="showcase-pre-title">
+                    <span style={{ fontSize: '1.2rem', lineHeight: 0 }}>•</span> Selected Works
+                </span>
+                <h2 className="showcase-title">Recent Projects</h2>
+                <p className="showcase-description">
+                    A curated collection of full-stack web applications, AI-integrated software, mobile products, and custom UI/UX design portfolios.
+                </p>
+            </div>
+
             <div className="showcase-grid">
-                {projects.map((project, i) => (
-                    <div
-                        className="showcase-card"
-                        key={project.title}
-                        data-aos="fade-up"
-                        data-aos-delay={i > 0 ? i * 100 : undefined}
-                    >
-                        <img
-                            src={project.thumb}
-                            alt={`${project.title} Screenshot`}
-                            onClick={() => openGallery(project)}
-                        />
-                        <h3>{project.title}</h3>
-                        <p>{project.desc}</p>
-                        <a href={project.link} className="btn" target="_blank" rel="noreferrer">
-                            {project.linkLabel}
-                        </a>
-                    </div>
-                ))}
+                {/* Left Column (Even indexes) */}
+                <div className="showcase-column showcase-column-left">
+                    {leftColumnProjects.map((project, i) => (
+                        <div
+                            className="showcase-card"
+                            key={project.title}
+                            data-aos="fade-up"
+                            data-aos-delay={i * 100}
+                        >
+                            <div className="showcase-img-wrapper" onClick={() => openGallery(project)}>
+                                <img
+                                    src={project.thumb}
+                                    alt={`${project.title} Thumbnail`}
+                                    className="showcase-img"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <h3>{project.title}</h3>
+                            <p>{project.desc}</p>
+                            <div className="showcase-card-footer">
+                                <span className="showcase-tag">{project.tag}</span>
+                                <a
+                                    href={project.link}
+                                    className="showcase-link"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
+                                    {project.linkLabel} <i className="fas fa-arrow-up-right-from-square" style={{ marginLeft: '2px' }}></i>
+                                </a>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+
+                {/* Right Column (Odd indexes - Staggered down) */}
+                <div className="showcase-column showcase-column-right">
+                    {rightColumnProjects.map((project, i) => (
+                        <div
+                            className="showcase-card"
+                            key={project.title}
+                            data-aos="fade-up"
+                            data-aos-delay={i * 100 + 50}
+                        >
+                            <div className="showcase-img-wrapper" onClick={() => openGallery(project)}>
+                                <img
+                                    src={project.thumb}
+                                    alt={`${project.title} Thumbnail`}
+                                    className="showcase-img"
+                                    loading="lazy"
+                                />
+                            </div>
+                            <h3>{project.title}</h3>
+                            <p>{project.desc}</p>
+                            <div className="showcase-card-footer">
+                                <span className="showcase-tag">{project.tag}</span>
+                                <a
+                                    href={project.link}
+                                    className="showcase-link"
+                                    target="_blank"
+                                    rel="noreferrer"
+                                    onClick={(e) => e.stopPropagation()}
+                                >
+                                    {project.linkLabel} <i className="fas fa-arrow-up-right-from-square" style={{ marginLeft: '2px' }}></i>
+                                </a>
+                            </div>
+                        </div>
+                    ))}
+                </div>
             </div>
 
             {galleryOpen && activeProject && (
