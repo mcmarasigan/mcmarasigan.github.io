@@ -33,6 +33,8 @@ const projects = [
         desc: 'A personal expense tracker and budget advisor designed for Filipinos, built with React, Supabase, and the Google Gemini API. It features AI expense logging, a dynamic dashboard, and an AI budget advisor.',
         link: 'https://github.com/mcmarasigan/gastos',
         linkLabel: 'GitHub',
+        demoLink: 'https://gastos-six-eta.vercel.app/login',
+        demoLinkLabel: 'Website',
         images: genImgs('gastos', 'gastos-screenshot', 7, 'png'),
         captions: [
             'Login Page - Secure authentication to access your personal expense tracker.',
@@ -51,6 +53,8 @@ const projects = [
         desc: 'A modern, mobile-first, kawaii-themed landing page for a bakery. Features a structured pricing section with sticky filter chips, playful typography, and bespoke mascot illustrations to enhance brand identity.',
         link: 'https://github.com/mcmarasigan/TinybakerPH',
         linkLabel: 'GitHub',
+        demoLink: 'https://tinybakerph.vercel.app/',
+        demoLinkLabel: 'Website',
         images: genImgs('tinybaker', 'tinybaker-screenshot', 5, 'png'),
         captions: [
             'Landing Page - Cute-themed hero section introducing TinyBaker PH.',
@@ -595,15 +599,30 @@ function Projects() {
                             <p>{project.desc}</p>
                             <div className="showcase-card-footer">
                                 <span className="showcase-tag">{project.tag}</span>
-                                <a
-                                    href={project.link}
-                                    className="showcase-link"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    onClick={(e) => e.stopPropagation()}
-                                >
-                                    {project.linkLabel} <i className="fas fa-arrow-up-right-from-square" style={{ marginLeft: '2px' }}></i>
-                                </a>
+                                <div style={{ display: 'flex', gap: '14px', alignItems: 'center' }}>
+                                    {project.link && (
+                                        <a
+                                            href={project.link}
+                                            className="showcase-link"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            {project.linkLabel} <i className="fas fa-arrow-up-right-from-square" style={{ marginLeft: '2px' }}></i>
+                                        </a>
+                                    )}
+                                    {project.demoLink && (
+                                        <a
+                                            href={project.demoLink}
+                                            className="showcase-link"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            {project.demoLinkLabel} <i className="fas fa-arrow-up-right-from-square" style={{ marginLeft: '2px' }}></i>
+                                        </a>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     ))}
@@ -631,15 +650,30 @@ function Projects() {
                             <p>{project.desc}</p>
                             <div className="showcase-card-footer">
                                 <span className="showcase-tag">{project.tag}</span>
-                                <a
-                                    href={project.link}
-                                    className="showcase-link"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    onClick={(e) => e.stopPropagation()}
-                                >
-                                    {project.linkLabel} <i className="fas fa-arrow-up-right-from-square" style={{ marginLeft: '2px' }}></i>
-                                </a>
+                                <div style={{ display: 'flex', gap: '14px', alignItems: 'center' }}>
+                                    {project.link && (
+                                        <a
+                                            href={project.link}
+                                            className="showcase-link"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            {project.linkLabel} <i className="fas fa-arrow-up-right-from-square" style={{ marginLeft: '2px' }}></i>
+                                        </a>
+                                    )}
+                                    {project.demoLink && (
+                                        <a
+                                            href={project.demoLink}
+                                            className="showcase-link"
+                                            target="_blank"
+                                            rel="noreferrer"
+                                            onClick={(e) => e.stopPropagation()}
+                                        >
+                                            {project.demoLinkLabel} <i className="fas fa-arrow-up-right-from-square" style={{ marginLeft: '2px' }}></i>
+                                        </a>
+                                    )}
+                                </div>
                             </div>
                         </div>
                     ))}
