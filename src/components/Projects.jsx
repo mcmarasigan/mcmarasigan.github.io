@@ -13,13 +13,16 @@ const projects = [
         desc: 'A full-stack minimalist e-commerce application built with React (frontend) and Laravel (backend). Features product browsing, cart management, and seamless backend API integration.',
         link: 'https://github.com/mcmarasigan/ecommerce',
         linkLabel: 'GitHub',
-        images: genImgs('ecommerce', 'ecommerce-screenshot', 5, 'png'),
+        images: genImgs('ecommerce', 'ecommerce-screenshot', 8, 'png'),
         captions: [
             'Storefront - Main page showcasing featured products and clean UI.',
             'Product Details - Detailed view of an individual product with descriptions.',
             'Shopping Cart - Seamless cart management for users.',
             'Checkout Process - Secure and straightforward checkout experience.',
             'User Dashboard - Account settings and order history.',
+            'Login Page - Secure user authentication interface.',
+            'Registration Page - Easy account creation for new customers.',
+            'Admin Dashboard - Store management panel showing metrics, sales, and order status controls.',
         ],
     },
     {
