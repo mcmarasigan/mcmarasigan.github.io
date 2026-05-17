@@ -9,7 +9,7 @@ function genImgs(folder, prefix, count, ext) {
 const projects = [
     {
         title: 'Lumière E-Commerce',
-        thumb: '/ecommerce/ecommerce_mockup.png',
+        thumb: '/ecommerce/ecommerce-screenshot1.png',
         desc: 'A full-stack minimalist e-commerce application built with React (frontend) and Laravel (backend). Features product browsing, cart management, and seamless backend API integration.',
         link: 'https://github.com/mcmarasigan/ecommerce',
         linkLabel: 'GitHub',
