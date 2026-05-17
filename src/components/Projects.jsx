@@ -579,6 +579,7 @@ function Projects() {
                         <div
                             className="showcase-card"
                             key={project.title}
+                            id={project.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}
                             data-aos="fade-up"
                             data-aos-delay={i * 100}
                         >
@@ -614,6 +615,7 @@ function Projects() {
                         <div
                             className="showcase-card"
                             key={project.title}
+                            id={project.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}
                             data-aos="fade-up"
                             data-aos-delay={i * 100 + 50}
                         >

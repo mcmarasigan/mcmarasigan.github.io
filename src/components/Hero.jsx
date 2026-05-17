@@ -6,21 +6,21 @@ const featuredSlides = [
         desc: "A full-stack minimalist online store built with React and Laravel. Features dynamic product browsing, secure cart management, and seamless backend API controls.",
         tag: "React & Laravel",
         img: "/ecommerce/ecommerce-screenshot1.png",
-        link: "#showcase"
+        link: "#lumiere-e-commerce"
     },
     {
         title: "Gastos Budget Tracker",
         desc: "A personal expense advisor built with React and Supabase, leveraging the Google Gemini API for natural-language logging and automated budget advice.",
         tag: "AI & Supabase",
         img: "/gastos/logo.png",
-        link: "#showcase"
+        link: "#gastos"
     },
     {
         title: "FRESHEVAL Scanner",
         desc: "An AI-powered Flutter application for vegetable freshness evaluation, powered by trained YOLOv8 and EfficientNetB7 computer vision classification models.",
         tag: "Flutter & YOLOv8",
         img: "/fresh-eval/fresheval-thumbnail.png",
-        link: "#showcase"
+        link: "#fresheval"
     }
 ]
 
@@ -37,8 +37,14 @@ function Hero() {
 
     const scrollToProjects = (e) => {
         e.preventDefault()
-        const el = document.querySelector('#showcase')
-        if (el) el.scrollIntoView({ behavior: 'smooth' })
+        const targetId = activeSlide.link
+        const el = document.querySelector(targetId)
+        if (el) {
+            el.scrollIntoView({ behavior: 'smooth', block: 'center' })
+        } else {
+            const fallback = document.querySelector('#showcase')
+            if (fallback) fallback.scrollIntoView({ behavior: 'smooth' })
+        }
     }
 
     // Get slides based on active index (left, center, right)
