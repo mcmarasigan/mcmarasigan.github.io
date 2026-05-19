@@ -541,7 +541,7 @@ function Hero() {
                 {/* 1. Large Typographical Display Layout */}
                 <div className="hero-typographic" data-aos="fade-up">
                     <div className="hero-row-1">
-                        <h1 className="hero-text-huge hero-text-gradient">Web Dev &</h1>
+                        <h1 className="hero-text-huge hero-text-gradient">Full-Stack Dev &</h1>
                         <a href="#showcase" className="hero-capsule-btn" onClick={scrollToProjects}>
                             <span>Projects</span>
                             <span className="btn-icon">→</span>
