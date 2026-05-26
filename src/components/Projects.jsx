@@ -478,10 +478,6 @@ function Projects() {
                     color: #a0a0a0;
                     margin: 0 0 24px 0;
                     text-align: left;
-                    display: -webkit-box;
-                    -webkit-line-clamp: 3;
-                    -webkit-box-orient: vertical;
-                    overflow: hidden;
                     max-width: 92%;
                 }
 
