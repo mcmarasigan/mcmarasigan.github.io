@@ -8,6 +8,32 @@ function genImgs(folder, prefix, count, ext) {
 
 const projects = [
     {
+        title: 'Teacher Management System (TMS)',
+        thumb: '/tms/tms-screenshot1.png',
+        tag: 'React & Laravel',
+        desc: 'A modern, comprehensive web application designed to manage teacher profiles, track class logs, monitor daily attendance, evaluate performance, and handle teacher-admin requests.',
+        link: '',
+        linkLabel: 'Private Repo',
+        images: genImgs('tms', 'tms-screenshot', 15, 'png'),
+        captions: [
+            'Login Page - Secure authentication portal for both Administrators and Teachers.',
+            'Admin Dashboard - Centralized analytics showing total teachers, daily attendance rate, and pending requests.',
+            'Teacher Management - Administrator interface to register, update, and manage teacher profiles.',
+            'Teacher Profile - Detailed view of a teacher\'s basic info, subjects handled, and employment status.',
+            'Attendance Report (Admin) - Daily log view where administrators can monitor who timed in and who was late.',
+            'Performance Evaluation - Module for admins to rate teachers with a 5-star system and provide qualitative feedback.',
+            'Request Management - Admin panel to review, approve, or reject incoming teacher requests (e.g., leave, supplies).',
+            'Class Logs Directory - Centralized table for administrators to review all submitted class logs by all teachers.',
+            'Teacher Dashboard - Personalized view for teachers featuring a quick Time In/Out widget and upcoming schedule.',
+            'My Attendance - Personal history log for teachers to track their exact time-ins and daily statuses.',
+            'Log a Class - Form for teachers to submit daily class summaries, student attendance, and remarks.',
+            'My Performance - Dedicated page for teachers to view their received evaluations and ratings from admins.',
+            'Submit Request - Simple form for teachers to submit requests to administration.',
+            'My Requests - Tracking system for teachers to monitor the status (Pending, Approved, Rejected) of their requests.',
+            'Account Settings - Profile management page allowing users to update their personal details and secure their passwords.',
+        ],
+    },
+    {
         title: 'Lumière E-Commerce',
         thumb: '/ecommerce/ecommerce-screenshot1.png',
         tag: 'Full-Stack Dev',
