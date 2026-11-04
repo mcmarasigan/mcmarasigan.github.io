@@ -85,7 +85,7 @@ const projects = [
         linkLabel: 'GitHub',
         demoLink: 'https://tinybakerph.vercel.app/',
         demoLinkLabel: 'Website',
-        images: genImgs('tinybaker', 'tinybaker-screenshot', 12, 'png'),
+        images: genImgs('tinybaker', 'tinybaker-screenshot', 13, 'png'),
         captions: [
             'Landing Page - Kawaii-themed hero section introducing TinyBaker PH.',
             'Batch Pre-Order Banner - Live baking schedule and pre-order cutoffs.',
@@ -94,6 +94,7 @@ const projects = [
             'Reserve Your Treats - Pre-order checkout form with QR Ph payment integration.',
             'Why Choose Us - Highlights of fresh ingredients and bespoke packaging.',
             'Contact Section - Custom order inquiry form and social channels.',
+            'Footer Section - Brand details, operational hours, and location.',
             'Admin Login - Secure administrative portal authentication (/admin).',
             'Admin Dashboard - Real-time sales analytics, revenue KPIs, and order status charts.',
             'Admin Batch Orders - Order lifecycle tracking, payment verification, and Excel (.xlsx) export.',
