@@ -531,7 +531,7 @@ function Contact({ interestedIn: propInterestedIn, setInterestedIn: propSetInter
                                         <option value="Starter Website (from ₱12k)">Starter Website (from ₱12,000)</option>
                                         <option value="Business Website with Admin (from ₱45k)">Business Website with Admin (from ₱45,000)</option>
                                         <option value="Android Mobile App - Flutter (from ₱60k)">Android Mobile App - Flutter (from ₱60,000)</option>
-                                        <option value="Custom Enterprise / POS System (from ₱150k)">Custom Enterprise / POS System (from ₱150,000)</option>
+                                        <option value="Custom Enterprise / POS System (from ₱100k)">Custom Enterprise / POS System (from ₱100,000)</option>
                                         <option value="AI & Smart Automation Add-On">AI & Smart Automation Add-On</option>
                                         <option value="Both web design and development">Both web design and development</option>
                                         <option value="Frontend Development">Frontend Development</option>
