@@ -1,7 +1,9 @@
 import { useState } from 'react'
 
-function Contact() {
-    const [interestedIn, setInterestedIn] = useState('Both web design and development')
+function Contact({ interestedIn: propInterestedIn, setInterestedIn: propSetInterestedIn }) {
+    const [localInterestedIn, setLocalInterestedIn] = useState('Starter Website (from ₱12k)')
+    const interestedIn = propInterestedIn !== undefined ? propInterestedIn : localInterestedIn
+    const setInterestedIn = propSetInterestedIn || setLocalInterestedIn
     const [acceptedPolicy, setAcceptedPolicy] = useState(false)
     const [policyOpen, setPolicyOpen] = useState(false)
 
@@ -476,7 +478,7 @@ function Contact() {
                     <span className="contact-pre-title">✦ Contact me</span>
                     <h2 className="contact-title">Start Your Project</h2>
                     <p className="contact-subtitle">
-                        I&apos;ll help you plan, develop, and deploy full-stack web applications and AI solutions that deliver actual results.
+                        I&apos;ll help you plan, develop, and deploy full-stack web applications, Android mobile apps, and custom systems that deliver actual results.
                     </p>
                 </div>
 
@@ -515,22 +517,46 @@ function Contact() {
                             </div>
                         </div>
 
-                        {/* Dropdown Interest Selection */}
-                        <div className="form-group">
-                            <label>I am interested in</label>
-                            <div className="select-wrapper">
-                                <select
-                                    name="interest"
-                                    className="form-group-select"
-                                    value={interestedIn}
-                                    onChange={(e) => setInterestedIn(e.target.value)}
-                                >
-                                    <option value="Both web design and development">Both web design and development</option>
-                                    <option value="Frontend Development">Frontend Development</option>
-                                    <option value="Backend Development & Databases">Backend Development & Databases</option>
-                                    <option value="QA Manual & Automation Testing">QA Manual & Automation Testing</option>
-                                    <option value="AI & Machine Learning Integrations">AI & Machine Learning Integrations</option>
-                                </select>
+                        {/* Package & Timeline Row */}
+                        <div className="form-row-two-col">
+                            <div className="form-group">
+                                <label>I am interested in</label>
+                                <div className="select-wrapper">
+                                    <select
+                                        name="interest"
+                                        className="form-group-select"
+                                        value={interestedIn}
+                                        onChange={(e) => setInterestedIn(e.target.value)}
+                                    >
+                                        <option value="Starter Website (from ₱12k)">Starter Website (from ₱12,000)</option>
+                                        <option value="Business Website with Admin (from ₱45k)">Business Website with Admin (from ₱45,000)</option>
+                                        <option value="Android Mobile App - Flutter (from ₱60k)">Android Mobile App - Flutter (from ₱60,000)</option>
+                                        <option value="Custom Enterprise / POS System (from ₱150k)">Custom Enterprise / POS System (from ₱150,000)</option>
+                                        <option value="AI & Smart Automation Add-On">AI & Smart Automation Add-On</option>
+                                        <option value="Both web design and development">Both web design and development</option>
+                                        <option value="Frontend Development">Frontend Development</option>
+                                        <option value="Backend Development & Databases">Backend Development & Databases</option>
+                                        <option value="QA Manual & Automation Testing">QA Manual & Automation Testing</option>
+                                        <option value="Other / General Consultation">Other / General Consultation</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div className="form-group">
+                                <label>Target Timeline</label>
+                                <div className="select-wrapper">
+                                    <select
+                                        name="timeline"
+                                        className="form-group-select"
+                                        defaultValue="Flexible / Still Planning"
+                                    >
+                                        <option value="Flexible / Still Planning">Flexible / Still Planning</option>
+                                        <option value="Within 1 Month">Within 1 Month</option>
+                                        <option value="1 – 2 Months">1 – 2 Months</option>
+                                        <option value="2 – 3 Months">2 – 3 Months</option>
+                                        <option value="3+ Months (Enterprise)">3+ Months (Enterprise)</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
 

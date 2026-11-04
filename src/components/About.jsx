@@ -3,19 +3,19 @@ import { useState } from 'react'
 const skillsData = {
     frontend: {
         title: 'Front-end',
-        items: ['TypeScript', 'React', 'JavaScript', 'HTML5', 'CSS3', 'Vite', 'Flutter', 'Dart', 'React Native', 'Bootstrap 5']
+        items: ['Vue.js', 'React', 'TypeScript', 'Tailwind CSS', 'JavaScript', 'Vuetify', 'HTML5', 'CSS3', 'Vite', 'Flutter', 'Dart', 'React Native', 'Bootstrap 5']
     },
     backend: {
         title: 'Back-end',
-        items: ['Laravel', 'Spring Boot', 'PHP', 'Java', 'Python', 'MySQL', 'Firebase', 'Rest APIs', 'MailHog']
+        items: ['Laravel', 'Spring Boot', 'PHP', 'Java', 'Python', 'REST APIs', 'MySQL', 'Firebase', 'MailHog']
     },
     ml: {
         title: 'Machine Learning',
-        items: ['YOLOv8', 'EfficientNetB7', 'Data Science', 'Image Classification', 'TensorFlow', 'Model Training']
+        items: ['YOLOv8', 'EfficientNetB7', 'Data Science', 'Image Classification', 'AI-Assisted Dev', 'Model Training']
     },
     tools: {
         title: 'Tools & Design',
-        items: ['Figma', 'Git', 'GitHub', 'VS Code', 'Canva', 'XAMPP', 'VirtualBox', 'Google Workspace']
+        items: ['Figma', 'Git', 'GitHub', 'VS Code', 'Canva', 'XAMPP', 'VirtualBox', 'Vite', 'Google Workspace']
     }
 }
 
@@ -332,7 +332,7 @@ function About() {
                             Hi! I&apos;m a <strong>Computer Science graduate specializing in Data Science</strong>, passionate about building Technical Innovation with real-world usability.
                         </h2>
                         <p className="about-intro-paragraph">
-                            My professional experience includes working as a <strong>Web Developer at Moodlearning (UP Diliman)</strong>, where I developed government web systems using Laravel, Tailwind, and Vite, and serving as a <strong>QA Tester for AgentGenius AI</strong> documenting bugs across B2B SaaS platforms.
+                            My professional experience includes developing modern web applications and systems using <strong>Laravel, Vue 3, Tailwind CSS, and Vite</strong>, as well as serving as a <strong>QA Tester for AgentGenius AI</strong> documenting bugs across B2B SaaS platforms.
                         </p>
                     </div>
                 </div>
