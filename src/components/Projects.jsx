@@ -85,7 +85,7 @@ const projects = [
         linkLabel: 'GitHub',
         demoLink: 'https://tinybakerph.vercel.app/',
         demoLinkLabel: 'Website',
-        images: genImgs('tinybaker', 'tinybaker-screenshot', 13, 'png'),
+        images: genImgs('tinybaker', 'tinybaker-screenshot', 15, 'png'),
         captions: [
             'Landing Page - Kawaii-themed hero section introducing TinyBaker PH.',
             'Batch Pre-Order Banner - Live baking schedule and pre-order cutoffs.',
@@ -100,6 +100,8 @@ const projects = [
             'Admin Batch Orders - Order lifecycle tracking, payment verification, and Excel (.xlsx) export.',
             'Admin Menu & Inventory - Category management, item creation, and stock controls.',
             'Admin Audit Trail - Complete system activity logs, user tracking, and security IP audit history.',
+            'Admin Settings (Account & Security) - Account profile management, inactivity auto-logout, and tamper-proof security controls.',
+            'Admin Settings (Notifications) - Automated baking alerts, order notifications, and inventory reminder preferences.',
         ],
     },
     {
