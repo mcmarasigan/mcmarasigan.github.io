@@ -101,7 +101,7 @@ const projects = [
             'Admin Menu & Inventory - Category management, item creation, and stock controls.',
             'Admin Audit Trail - Complete system activity logs, user tracking, and security IP audit history.',
             'Admin Settings (Account & Security) - Account profile management, inactivity auto-logout, and tamper-proof security controls.',
-            'Admin Settings (Notifications) - Automated baking alerts, order notifications, and inventory reminder preferences.',
+            'Admin Settings (Notifications) - Notification preferences and channels (in-app alerts & email) for new orders, payments, and batch reminders.',
         ],
     },
     {
