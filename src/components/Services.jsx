@@ -1,36 +1,38 @@
 function Services({ onSelectPackage }) {
     const packages = [
         {
-            id: 'starter',
-            name: 'Starter Website',
-            tagline: 'Personal portfolio, landing page, or small business showcase',
+            id: 'website-dev',
+            categoryNum: '01',
+            name: 'Website Development',
+            tagline: 'Portfolios, high-converting landing pages, and small business showcases',
             price: '12,000',
-            range: '₱12,000 – ₱20,000',
-            priceDriver: 'Varies with page count & custom graphics',
-            timeline: '2 – 3 Weeks',
-            interestValue: 'Starter Website (from ₱12k)',
+            range: '₱12,000 – ₱25,000',
+            priceDriver: 'Varies with custom page count & bespoke UI graphics',
+            timeline: '2 – 4 Weeks',
+            interestValue: 'Website Development (from ₱12k)',
             featured: false,
             badge: null,
             proof: null,
             features: [
                 'Up to 5 custom responsive pages',
-                'Mobile, tablet & desktop optimized',
-                'Contact form with email delivery',
-                'Basic SEO & fast performance',
-                'Deployment & DNS setup assistance',
+                'Mobile, tablet & desktop optimization',
+                'Contact and inquiry forms with email delivery',
+                'Basic technical SEO & performance optimization',
+                'Deployment & DNS configuration assistance',
                 '1 revision round',
-                'Handover documentation'
+                'Documentation & live handover walkthrough'
             ]
         },
         {
-            id: 'business',
-            name: 'Business System',
-            tagline: 'Online ordering, pre-order site, booking, or product catalog',
+            id: 'business-apps',
+            categoryNum: '02',
+            name: 'Business Web Applications',
+            tagline: 'Online ordering, pre-order platforms, booking systems, and product catalogues',
             price: '45,000',
-            range: '₱45,000 – ₱75,000',
-            priceDriver: 'Varies with payment gateway & admin workflows',
-            timeline: '6 – 8 Weeks',
-            interestValue: 'Business Website with Admin (from ₱45k)',
+            range: '₱45,000 – ₱85,000',
+            priceDriver: 'Varies with admin workflow depth, catalogue size & order complexity',
+            timeline: '6 – 10 Weeks',
+            interestValue: 'Business Web Application (from ₱45k)',
             featured: true,
             badge: 'Most Popular',
             proof: {
@@ -39,62 +41,109 @@ function Services({ onSelectPackage }) {
                 link: 'https://tinybakerph.vercel.app/'
             },
             features: [
-                'Full-stack Laravel + Vue 3 / React',
-                'Dedicated admin dashboard (/admin)',
-                'Product & order management workflows',
-                'Order status & automated email alerts',
-                'Secure database & authentication',
+                'Full-stack Laravel + Vue 3 / React development',
+                'Dedicated administrator dashboard (/admin)',
+                'Product catalogue & batch pre-order management',
+                'Order status updates & customer email notifications',
+                'Secure database architecture & session authentication',
                 '2 revision rounds',
-                '2 weeks post-launch bug fixes & support'
+                '2 weeks post-launch warranty & bug fixes'
             ]
         },
         {
-            id: 'mobile',
-            name: 'Android Mobile App',
-            tagline: 'Native-performance Android app with modern Flutter architecture',
-            price: '60,000',
-            range: '₱60,000 – ₱90,000',
-            priceDriver: 'Varies with API depth, offline mode & auth flows',
-            timeline: '6 – 8 Weeks',
-            interestValue: 'Android Mobile App - Flutter (from ₱60k)',
+            id: 'android-apps',
+            categoryNum: '03',
+            name: 'Android Mobile Applications',
+            tagline: 'Native-performance Android applications built with modern Flutter architecture',
+            price: '50,000',
+            range: '₱50,000 – ₱90,000',
+            priceDriver: 'Varies with backend API complexity, offline sync & interactive flows',
+            timeline: '6 – 10 Weeks',
+            interestValue: 'Android Mobile App - Flutter (from ₱50k)',
             featured: false,
             badge: null,
             proof: {
-                label: 'Stack like',
+                label: 'Built like',
                 name: 'SafeSpace & FreshEval',
                 link: '#showcase'
             },
             features: [
                 'Built with Flutter & Dart (Android focus)',
                 'Firebase real-time DB or REST API integration',
-                'User authentication & account profile flows',
-                'Push notifications setup',
+                'User authentication & interactive user profiles',
+                'Push notifications setup & background messaging',
+                'Testing across multiple physical Android devices',
                 'Production APK & Google Play App Bundle (.aab)',
                 'Google Play Store submission assistance',
                 '2 revision rounds + 2 weeks post-launch support'
             ]
         },
         {
-            id: 'custom',
-            name: 'Custom System',
-            tagline: 'POS, inventory, document management, auditable workflows',
+            id: 'custom-systems',
+            categoryNum: '04',
+            name: 'Custom Business & Workflow Systems',
+            tagline: 'Enterprise operations, records management, document routing, and auditable workflows',
             price: '100,000',
-            range: 'Starting at ₱100,000+',
-            priceDriver: 'Tailored to enterprise scope & hardware integrations',
-            timeline: '3 – 4 Months',
-            interestValue: 'Custom Enterprise / POS System (from ₱100k)',
+            range: '₱100,000 – ₱160,000+',
+            priceDriver: 'Tailored to enterprise operations, multi-user roles & hardware scale',
+            timeline: '3 – 4+ Months',
+            interestValue: 'Custom Business & Workflow System (from ₱100k)',
             featured: false,
             badge: 'Enterprise',
-            proof: null,
+            proof: {
+                label: 'Audit Trail Demo',
+                name: 'TinyBaker Admin',
+                link: '#showcase'
+            },
             features: [
-                'Everything in Business + custom architecture',
-                'Role-Based Access Control (RBAC) & audit logs',
-                'QR code generation & sticker/receipt printing',
-                'Automated Excel & PDF reporting tools',
-                'Payment gateway integration (GCash, PayMongo, etc.)',
-                'Admin/staff walkthrough & system training',
-                '30 days dedicated post-launch support'
+                'Custom system architecture (Laravel 11, Vue 3, MySQL)',
+                'Role-Based Access Control (RBAC) & permission matrices',
+                'Audit trails & activity logging with IP tracking',
+                'Document lifecycle, routing, and records workflows',
+                'QR code generation and sticker / receipt printing',
+                'Automated Excel (.xlsx) & PDF reporting engines',
+                'Staff system walkthrough & operator training',
+                '30 days dedicated post-launch support & warranty'
             ]
+        }
+    ]
+
+    const addOnServices = [
+        {
+            title: 'Payment Gateway Integration',
+            desc: 'Seamless automated checkout with GCash, PayMongo, Maya, or card payments.',
+            price: 'From ₱15,000',
+            badge: 'E-Commerce'
+        },
+        {
+            title: 'SMS Notification Alerts',
+            desc: 'Automated transactional SMS alerts to customers for order updates, OTPs, or booking confirmations.',
+            price: 'From ₱5,000',
+            badge: 'Automation'
+        },
+        {
+            title: 'Automated Excel & PDF Reports',
+            desc: 'Custom reporting engine exporting filtered sales, order logs, or customer summaries.',
+            price: 'From ₱5,000',
+            badge: 'Reporting'
+        },
+        {
+            title: 'QR Code Generation & Scanning',
+            desc: 'Dynamic QR codes for order verification, item tags, product packaging, or receipts.',
+            price: 'From ₱5,000',
+            badge: 'Tracking'
+        },
+        {
+            title: 'AI & Computer Vision Integration',
+            desc: 'Custom AI models (YOLOv8 vision detection, intelligent document parsing, or AI chatbots).',
+            price: 'Custom Quotation',
+            badge: 'AI / ML'
+        },
+        {
+            title: 'Thermal Printer & Hardware Setup',
+            desc: 'Integration with ESC/POS thermal receipt printers or wireless label printers.',
+            price: 'Custom Quotation',
+            badge: 'Hardware'
         }
     ]
 
@@ -102,27 +151,27 @@ function Services({ onSelectPackage }) {
         {
             num: '01',
             title: 'Discovery & Scope',
-            desc: 'Quick consultation to map out requirements, pages, and key milestones.'
+            desc: 'Consultation to map out technical requirements, modules, pages, and key milestones.'
         },
         {
             num: '02',
             title: 'Proposal & 50% Kickoff',
-            desc: 'Clear agreement with a locked-in scope and timeline. Work starts upon deposit.'
+            desc: 'Clear scope agreement and locked-in timeline. Work begins upon deposit.'
         },
         {
             num: '03',
             title: 'Design & Build',
-            desc: 'Continuous development with live staging previews and milestone check-ins.'
+            desc: 'Iterative development with live staging previews and milestone check-ins.'
         },
         {
             num: '04',
             title: 'Testing & Revisions',
-            desc: 'Cross-device QA testing, performance audit, and feedback implementation.'
+            desc: 'Cross-device QA testing, security review, and client feedback implementation.'
         },
         {
             num: '05',
             title: 'Go-Live & Handover',
-            desc: 'Final 50% balance at go-live. Domain linking, full credentials, and documentation.'
+            desc: 'Final 50% balance at go-live. Domain linking, admin credentials, and live system walkthrough.'
         }
     ]
 
@@ -155,13 +204,13 @@ function Services({ onSelectPackage }) {
                     margin: 0 auto;
                     display: flex;
                     flex-direction: column;
-                    gap: 70px;
+                    gap: 75px;
                 }
 
                 /* Header */
                 .services-header-block {
                     text-align: left;
-                    max-width: 760px;
+                    max-width: 780px;
                 }
 
                 .services-pre-title {
@@ -202,6 +251,33 @@ function Services({ onSelectPackage }) {
 
                 body.light-mode .services-subtitle {
                     color: #555555;
+                }
+
+                /* Section Sub-headings */
+                .services-subheading-block {
+                    text-align: left;
+                    margin-bottom: 28px;
+                }
+
+                .services-subheading-title {
+                    font-size: 1.8rem;
+                    font-weight: 700;
+                    color: #ffffff;
+                    margin: 0 0 8px 0;
+                }
+
+                body.light-mode .services-subheading-title {
+                    color: #1a1a1a;
+                }
+
+                .services-subheading-desc {
+                    font-size: 0.95rem;
+                    color: #9e9e9e;
+                    margin: 0;
+                }
+
+                body.light-mode .services-subheading-desc {
+                    color: #666666;
                 }
 
                 /* Pricing Cards Grid */
@@ -288,11 +364,25 @@ function Services({ onSelectPackage }) {
                     margin-bottom: 24px;
                 }
 
+                .category-num-tag {
+                    font-family: 'Fira Code', monospace;
+                    font-size: 0.8rem;
+                    color: #bb86fc;
+                    font-weight: 700;
+                    margin-bottom: 4px;
+                    display: block;
+                }
+
+                body.light-mode .category-num-tag {
+                    color: #7b2cbf;
+                }
+
                 .package-name {
-                    font-size: 1.4rem;
+                    font-size: 1.35rem;
                     font-weight: 700;
                     color: #ffffff;
                     margin: 0 0 6px 0;
+                    line-height: 1.3;
                 }
 
                 body.light-mode .package-name {
@@ -303,7 +393,7 @@ function Services({ onSelectPackage }) {
                     font-size: 0.86rem;
                     color: #9e9e9e;
                     line-height: 1.45;
-                    min-height: 38px;
+                    min-height: 48px;
                     margin: 0 0 16px 0;
                 }
 
@@ -535,12 +625,118 @@ function Services({ onSelectPackage }) {
                 .timeline-disclaimer {
                     font-size: 0.84rem;
                     color: #888888;
-                    margin-top: -30px;
+                    margin-top: -35px;
                     text-align: left;
                 }
 
                 body.light-mode .timeline-disclaimer {
                     color: #666666;
+                }
+
+                /* Add-On Services Catalogue Section */
+                .addons-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    text-align: left;
+                }
+
+                .addons-grid {
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+                    gap: 20px;
+                }
+
+                .addon-card {
+                    background: rgba(255, 255, 255, 0.02);
+                    border: 1px solid rgba(255, 255, 255, 0.07);
+                    border-radius: 16px;
+                    padding: 22px 22px 20px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: 14px;
+                    transition: all 0.3s ease;
+                }
+
+                body.light-mode .addon-card {
+                    background: #ffffff;
+                    border: 1px solid rgba(0, 0, 0, 0.08);
+                    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+                }
+
+                .addon-card:hover {
+                    border-color: rgba(187, 134, 252, 0.4);
+                    transform: translateY(-3px);
+                }
+
+                body.light-mode .addon-card:hover {
+                    border-color: rgba(123, 44, 191, 0.4);
+                }
+
+                .addon-top {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 8px;
+                }
+
+                .addon-badge-row {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .addon-badge {
+                    font-size: 0.72rem;
+                    font-weight: 700;
+                    letter-spacing: 0.05em;
+                    text-transform: uppercase;
+                    padding: 3px 8px;
+                    border-radius: 6px;
+                    background: rgba(187, 134, 252, 0.1);
+                    color: #bb86fc;
+                }
+
+                body.light-mode .addon-badge {
+                    background: rgba(123, 44, 191, 0.08);
+                    color: #7b2cbf;
+                }
+
+                .addon-title {
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    color: #ffffff;
+                    margin: 0;
+                    line-height: 1.35;
+                }
+
+                body.light-mode .addon-title {
+                    color: #1a1a1a;
+                }
+
+                .addon-desc {
+                    font-size: 0.85rem;
+                    line-height: 1.5;
+                    color: #9e9e9e;
+                    margin: 0;
+                }
+
+                body.light-mode .addon-desc {
+                    color: #666666;
+                }
+
+                .addon-price {
+                    font-size: 1.15rem;
+                    font-weight: 800;
+                    color: #bb86fc;
+                    font-family: 'Poppins', sans-serif;
+                    padding-top: 10px;
+                    border-top: 1px solid rgba(255, 255, 255, 0.06);
+                }
+
+                body.light-mode .addon-price {
+                    color: #7b2cbf;
+                    border-top: 1px solid rgba(0, 0, 0, 0.06);
                 }
 
                 /* Domain & Hosting Transparency Card */
@@ -754,7 +950,7 @@ function Services({ onSelectPackage }) {
 
                 .detail-list li {
                     font-size: 0.9rem;
-                    line-height: 1.5;
+                    line-height: 1.55;
                     color: #b3b3b3;
                     display: flex;
                     align-items: flex-start;
@@ -780,6 +976,9 @@ function Services({ onSelectPackage }) {
                     .pricing-grid {
                         grid-template-columns: repeat(2, 1fr);
                     }
+                    .addons-grid {
+                        grid-template-columns: repeat(2, 1fr);
+                    }
                     .process-grid {
                         grid-template-columns: repeat(3, 1fr);
                     }
@@ -796,6 +995,9 @@ function Services({ onSelectPackage }) {
                         font-size: 2.2rem;
                     }
                     .pricing-grid {
+                        grid-template-columns: 1fr;
+                    }
+                    .addons-grid {
                         grid-template-columns: 1fr;
                     }
                     .process-grid {
@@ -816,14 +1018,14 @@ function Services({ onSelectPackage }) {
             <div className="services-container">
                 {/* Header */}
                 <div className="services-header-block" data-aos="fade-up">
-                    <span className="services-pre-title">✦ Services &amp; Pricing</span>
-                    <h2 className="services-title">Transparent Packages for Your Next Project</h2>
+                    <span className="services-pre-title">✦ Services &amp; Development Catalogue</span>
+                    <h2 className="services-title">Custom Software Engineering &amp; Solutions</h2>
                     <p className="services-subtitle">
-                        From high-converting landing pages to full-scale web applications, Android mobile apps, and custom systems. Every project is built custom, documented, and delivered with clean code.
+                        From high-converting responsive websites to full-stack Laravel applications, Android mobile apps, and auditable enterprise workflow systems. Every system is built custom with clean architecture and proven technologies.
                     </p>
                 </div>
 
-                {/* 4 Pricing Cards */}
+                {/* 4 Core Service Cards */}
                 <div className="pricing-grid">
                     {packages.map((pkg, idx) => (
                         <div
@@ -840,6 +1042,7 @@ function Services({ onSelectPackage }) {
 
                             <div>
                                 <div className="card-top">
+                                    <span className="category-num-tag">{pkg.categoryNum} — Service</span>
                                     <h3 className="package-name">{pkg.name}</h3>
                                     <p className="package-tagline">{pkg.tagline}</p>
 
@@ -897,15 +1100,41 @@ function Services({ onSelectPackage }) {
                     * Estimated delivery timelines begin once all project requirements, branding assets, copy, and kickoff deposit are provided.
                 </p>
 
+                {/* Modular Add-On Services Catalogue */}
+                <div className="addons-wrapper" data-aos="fade-up">
+                    <div className="services-subheading-block">
+                        <span className="services-pre-title">✦ Modular Capabilities</span>
+                        <h3 className="services-subheading-title">Additional Development &amp; Integrations</h3>
+                        <p className="services-subheading-desc">
+                            Selectable add-on modules to enhance your application without paying for bloated, one-size-fits-all packages.
+                        </p>
+                    </div>
+
+                    <div className="addons-grid">
+                        {addOnServices.map((addon, aIdx) => (
+                            <div key={aIdx} className="addon-card">
+                                <div className="addon-top">
+                                    <div className="addon-badge-row">
+                                        <span className="addon-badge">{addon.badge}</span>
+                                    </div>
+                                    <h4 className="addon-title">{addon.title}</h4>
+                                    <p className="addon-desc">{addon.desc}</p>
+                                </div>
+                                <div className="addon-price">{addon.price}</div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
                 {/* Domain & Hosting Transparency Policy */}
                 <div className="policy-card" data-aos="fade-up">
                     <div className="policy-header">
                         <h3 className="policy-title">
                             <span>🌐</span>
-                            <span>Domain, Hosting &amp; Account Ownership</span>
+                            <span>Domain, Hosting &amp; Infrastructure Policy</span>
                         </h3>
                         <p className="policy-lead">
-                            To guarantee you maintain <strong>100% legal ownership</strong> of your digital assets, all domains, hosting servers, and developer accounts are registered directly under your name and credentials. You are never locked in—I manage the full DNS configuration, SSL setup, and deployment for you.
+                            To ensure you have <strong>100% legal ownership</strong> over your business infrastructure, all domain names, hosting servers, and store accounts are registered directly under your credentials. I manage full technical deployment with zero markup on third-party provider fees.
                         </p>
                     </div>
 
@@ -916,27 +1145,27 @@ function Services({ onSelectPackage }) {
                                 <span>Domain Name</span>
                             </h4>
                             <p className="policy-item-desc">
-                                Registered in your own name and email (~₱600–900/year for <code>.com</code>, ~₱1,500/year for <code>.ph</code> via Namecheap, Hostinger, or dot.ph). You keep legal ownership.
+                                Registered directly under your name and email (~₱600–900/year for <code>.com</code>, ~₱1,500/year for <code>.ph</code> via Namecheap, Hostinger, or dot.ph). You retain legal ownership.
                             </p>
                         </div>
 
                         <div className="policy-item">
                             <h4 className="policy-item-title">
                                 <span>⚡</span>
-                                <span>Web Hosting</span>
+                                <span>Scalable Hosting</span>
                             </h4>
                             <p className="policy-item-desc">
-                                Static and Starter sites can be deployed <strong>free</strong> on Netlify or Vercel. Full-stack Laravel and custom systems use shared hosting or a VPS (~₱150–600/month) paid directly by you.
+                                Static websites can be hosted <strong>free</strong> on Netlify or Vercel. Full-stack Laravel and custom database systems run on client-owned shared hosting, VPS, or cloud servers billed directly by the provider.
                             </p>
                         </div>
 
                         <div className="policy-item">
                             <h4 className="policy-item-title">
                                 <span>📱</span>
-                                <span>Google Play &amp; APIs</span>
+                                <span>Developer Consoles</span>
                             </h4>
                             <p className="policy-item-desc">
-                                Android apps require a Google Play Console account ($25 one-time registration under your own Google account). Payment gateways (GCash, PayMongo) and SMS services are billed directly at provider cost.
+                                Android apps are published through your own Google Play Console ($25 one-time registration). Third-party transactional APIs (SMS, payment gateways) are billed at cost directly to your business.
                             </p>
                         </div>
                     </div>
@@ -944,7 +1173,10 @@ function Services({ onSelectPackage }) {
 
                 {/* How We Work Process */}
                 <div className="process-wrapper" data-aos="fade-up">
-                    <h3 className="process-title">How the Process Works</h3>
+                    <div className="services-subheading-block">
+                        <span className="services-pre-title">✦ Methodology</span>
+                        <h3 className="process-title">How the Development Process Works</h3>
+                    </div>
                     <div className="process-grid">
                         {processSteps.map((step) => (
                             <div key={step.num} className="process-step-card">
@@ -967,15 +1199,15 @@ function Services({ onSelectPackage }) {
                         <ul className="detail-list">
                             <li>
                                 <span className="detail-bullet">▸</span>
-                                <span><strong>Branding &amp; Content:</strong> Text copy, logo assets, brand colors, and high-resolution images for your pages.</span>
+                                <span><strong>Branding &amp; Content:</strong> Text copy, brand logos, color palette, and high-resolution assets for your application.</span>
                             </li>
                             <li>
                                 <span className="detail-bullet">▸</span>
-                                <span><strong>Decision-Maker:</strong> A designated point of contact for clear feedback, milestone approvals, and sign-offs.</span>
+                                <span><strong>Appointed Decision-Maker:</strong> A designated point of contact for clear feedback, milestone approvals, and sign-offs.</span>
                             </li>
                             <li>
                                 <span className="detail-bullet">▸</span>
-                                <span><strong>50% Downpayment:</strong> An initial 50% deposit before kickoff to lock in your project schedule and sprint.</span>
+                                <span><strong>50% Kickoff Deposit:</strong> An initial 50% deposit before development begins to secure your project sprint and scheduled delivery window.</span>
                             </li>
                         </ul>
                     </div>
@@ -984,31 +1216,31 @@ function Services({ onSelectPackage }) {
                     <div className="detail-box">
                         <h4 className="detail-box-title">
                             <span>🛡️</span>
-                            <span>Payment Terms &amp; Retainers</span>
+                            <span>Terms, Care &amp; Code Ownership</span>
                         </h4>
                         <ul className="detail-list">
                             <li>
                                 <span className="detail-bullet">▸</span>
-                                <span><strong>Accepted Payments:</strong> GCash, Maya, and Bank Transfer (BDO, BPI, UnionBank).</span>
+                                <span><strong>Accepted Payments:</strong> GCash, Maya, and Bank Transfer (BDO, BPI, UnionBank). 50% upfront, 50% upon launch.</span>
                             </li>
                             <li>
                                 <span className="detail-bullet">▸</span>
-                                <span><strong>Payment Structure:</strong> 50% upfront deposit to initiate development, 50% final balance upon launch and handover.</span>
+                                <span><strong>Deliverables &amp; Handover:</strong> Standard packages include live production deployment to your server, database setup, master <code>/admin</code> credentials, and 100% legal ownership of your business data, products, and customer records.</span>
                             </li>
                             <li>
                                 <span className="detail-bullet">▸</span>
-                                <span><strong>Out-of-Scope Additions:</strong> Additional features or requests outside agreed scope are billed at ₱700/hr.</span>
+                                <span><strong>Source Code &amp; IP Buyout:</strong> Handover of the raw developer source code repository and exclusive intellectual property rights is available under a separate custom quotation and written assignment agreement.</span>
                             </li>
                             <li>
                                 <span className="detail-bullet">▸</span>
-                                <span><strong>Tiered Maintenance Retainers:</strong>
-                                    <br />• <strong>Basic Care (₱1,500/mo):</strong> Automated cloud backups, security patches, framework updates, 48-hr response.
-                                    <br />• <strong>Priority Retainer (₱3,500/mo):</strong> Everything in Basic + 2 hours of monthly content/feature edits + 12-hr priority support.
+                                <span><strong>Tiered Website Care Plans:</strong>
+                                    <br />• <strong>Basic Care (₱1,500/mo):</strong> Routine automated backups, framework updates, security patches, 48-hr response.
+                                    <br />• <strong>Priority Retainer (₱3,500–₱5,000/mo):</strong> Includes dedicated monthly support hours for feature edits + 12-hr priority support.
                                 </span>
                             </li>
                             <li>
                                 <span className="detail-bullet">▸</span>
-                                <span><strong>AI &amp; Smart Automation Add-On:</strong> Custom AI assistants, computer vision detection (YOLOv8), or automated document parsing available starting at +₱15,000.</span>
+                                <span><strong>Out-of-Scope Additions:</strong> Additional features or requests outside agreed statement of work are billed at ₱700/hr.</span>
                             </li>
                         </ul>
                     </div>

@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 function Contact({ interestedIn: propInterestedIn, setInterestedIn: propSetInterestedIn }) {
-    const [localInterestedIn, setLocalInterestedIn] = useState('Starter Website (from ₱12k)')
+    const [localInterestedIn, setLocalInterestedIn] = useState('Website Development (from ₱12k)')
     const interestedIn = propInterestedIn !== undefined ? propInterestedIn : localInterestedIn
     const setInterestedIn = propSetInterestedIn || setLocalInterestedIn
     const [acceptedPolicy, setAcceptedPolicy] = useState(false)
@@ -528,15 +528,15 @@ function Contact({ interestedIn: propInterestedIn, setInterestedIn: propSetInter
                                         value={interestedIn}
                                         onChange={(e) => setInterestedIn(e.target.value)}
                                     >
-                                        <option value="Starter Website (from ₱12k)">Starter Website (from ₱12,000)</option>
-                                        <option value="Business Website with Admin (from ₱45k)">Business Website with Admin (from ₱45,000)</option>
-                                        <option value="Android Mobile App - Flutter (from ₱60k)">Android Mobile App - Flutter (from ₱60,000)</option>
-                                        <option value="Custom Enterprise / POS System (from ₱100k)">Custom Enterprise / POS System (from ₱100,000)</option>
-                                        <option value="AI & Smart Automation Add-On">AI & Smart Automation Add-On</option>
-                                        <option value="Both web design and development">Both web design and development</option>
+                                        <option value="Website Development (from ₱12k)">01. Website Development (from ₱12,000)</option>
+                                        <option value="Business Web Application (from ₱45k)">02. Business Web Application (from ₱45,000)</option>
+                                        <option value="Android Mobile App - Flutter (from ₱50k)">03. Android Mobile Application (from ₱50,000)</option>
+                                        <option value="Custom Business & Workflow System (from ₱100k)">04. Custom Business & Workflow System (from ₱100,000)</option>
+                                        <option value="Modular Add-On Integration (Payments / SMS / QR / Reports)">Modular Add-On Integration (Payments / SMS / QR / Reports)</option>
+                                        <option value="AI & Computer Vision Integration">AI & Computer Vision Integration</option>
                                         <option value="Frontend Development">Frontend Development</option>
                                         <option value="Backend Development & Databases">Backend Development & Databases</option>
-                                        <option value="QA Manual & Automation Testing">QA Manual & Automation Testing</option>
+                                        <option value="QA Testing & Verification">QA Testing & Verification</option>
                                         <option value="Other / General Consultation">Other / General Consultation</option>
                                     </select>
                                 </div>

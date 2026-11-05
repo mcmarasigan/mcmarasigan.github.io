@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 import './App.css'
 
 function App() {
-  const [selectedInterest, setSelectedInterest] = useState('Starter Website (from ₱12k)')
+  const [selectedInterest, setSelectedInterest] = useState('Website Development (from ₱12k)')
 
   useEffect(() => {
     // Initialize AOS
