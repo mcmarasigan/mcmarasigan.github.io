@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 function Contact({ interestedIn: propInterestedIn, setInterestedIn: propSetInterestedIn }) {
-    const [localInterestedIn, setLocalInterestedIn] = useState('Website Development (from ₱12k)')
+    const [localInterestedIn, setLocalInterestedIn] = useState('Full-time Job Opportunity')
     const interestedIn = propInterestedIn !== undefined ? propInterestedIn : localInterestedIn
     const setInterestedIn = propSetInterestedIn || setLocalInterestedIn
     const [acceptedPolicy, setAcceptedPolicy] = useState(false)
@@ -476,9 +476,9 @@ function Contact({ interestedIn: propInterestedIn, setInterestedIn: propSetInter
                 {/* Left side details */}
                 <div className="contact-info-panel" data-aos="fade-right">
                     <span className="contact-pre-title">✦ Contact me</span>
-                    <h2 className="contact-title">Start Your Project</h2>
+                    <h2 className="contact-title">Let&apos;s Work Together</h2>
                     <p className="contact-subtitle">
-                        I&apos;ll help you plan, develop, and deploy full-stack web applications, Android mobile apps, and custom systems that deliver actual results.
+                        I&apos;m open to full-time Full Stack Developer roles and collaborations. Whether you have an opportunity, a question about my work, or just want to connect, feel free to reach out.
                     </p>
                 </div>
 
@@ -520,7 +520,7 @@ function Contact({ interestedIn: propInterestedIn, setInterestedIn: propSetInter
                         {/* Package & Timeline Row */}
                         <div className="form-row-two-col">
                             <div className="form-group">
-                                <label>I am interested in</label>
+                                <label>Reason for reaching out</label>
                                 <div className="select-wrapper">
                                     <select
                                         name="interest"
@@ -528,46 +528,35 @@ function Contact({ interestedIn: propInterestedIn, setInterestedIn: propSetInter
                                         value={interestedIn}
                                         onChange={(e) => setInterestedIn(e.target.value)}
                                     >
-                                        <option value="Website Development (from ₱12k)">01. Website Development (from ₱12,000)</option>
-                                        <option value="Business Web Application (from ₱45k)">02. Business Web Application (from ₱45,000)</option>
-                                        <option value="Android Mobile App - Flutter (from ₱50k)">03. Android Mobile Application (from ₱50,000)</option>
-                                        <option value="Custom Business & Workflow System (from ₱100k)">04. Custom Business & Workflow System (from ₱100,000)</option>
-                                        <option value="Modular Add-On Integration (Payments / SMS / QR / Reports)">Modular Add-On Integration (Payments / SMS / QR / Reports)</option>
-                                        <option value="AI & Computer Vision Integration">AI & Computer Vision Integration</option>
-                                        <option value="Frontend Development">Frontend Development</option>
-                                        <option value="Backend Development & Databases">Backend Development & Databases</option>
-                                        <option value="QA Testing & Verification">QA Testing & Verification</option>
-                                        <option value="Other / General Consultation">Other / General Consultation</option>
+                                        <option value="Full-time Job Opportunity">Full-time Job Opportunity</option>
+                                        <option value="Interview Invitation">Interview Invitation</option>
+                                        <option value="Part-time / Contract Role">Part-time / Contract Role</option>
+                                        <option value="Project Collaboration">Project Collaboration</option>
+                                        <option value="Question About My Work">Question About My Work</option>
+                                        <option value="General Inquiry">General Inquiry</option>
                                     </select>
                                 </div>
                             </div>
 
                             <div className="form-group">
-                                <label>Target Timeline</label>
-                                <div className="select-wrapper">
-                                    <select
-                                        name="timeline"
-                                        className="form-group-select"
-                                        defaultValue="Flexible / Still Planning"
-                                    >
-                                        <option value="Flexible / Still Planning">Flexible / Still Planning</option>
-                                        <option value="Within 1 Month">Within 1 Month</option>
-                                        <option value="1 – 2 Months">1 – 2 Months</option>
-                                        <option value="2 – 3 Months">2 – 3 Months</option>
-                                        <option value="3+ Months (Enterprise)">3+ Months (Enterprise)</option>
-                                    </select>
-                                </div>
+                                <label>Company / Organization</label>
+                                <input
+                                    type="text"
+                                    name="company"
+                                    className="form-group-input"
+                                    placeholder="Enter company name (optional)"
+                                />
                             </div>
                         </div>
 
                         {/* Textarea details */}
                         <div className="form-group">
-                            <label>Tell me about your project</label>
+                            <label>Message</label>
                             <textarea
                                 name="message"
                                 className="form-group-textarea"
                                 required
-                                placeholder="Describe your goals, requirements, or timeline..."
+                                placeholder="Tell me about the role, opportunity, or what you'd like to discuss..."
                             ></textarea>
                         </div>
 
@@ -591,7 +580,7 @@ function Contact({ interestedIn: propInterestedIn, setInterestedIn: propSetInter
                             className="form-submit-btn"
                             disabled={!acceptedPolicy}
                         >
-                            <span>Send Project Details</span>
+                            <span>Send Message</span>
                             <span className="btn-arrow-badge">↗</span>
                         </button>
                     </form>

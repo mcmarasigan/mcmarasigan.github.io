@@ -9,7 +9,7 @@ import Footer from './components/Footer'
 import './App.css'
 
 function App() {
-  const [selectedInterest, setSelectedInterest] = useState('Website Development (from ₱12k)')
+  const [selectedInterest, setSelectedInterest] = useState('Full-time Job Opportunity')
 
   useEffect(() => {
     // Initialize AOS
@@ -42,7 +42,8 @@ function App() {
       <Hero />
       <About />
       <Projects />
-      <Services onSelectPackage={handleSelectPackage} />
+      {/* Services & pricing hidden while job hunting — uncomment to restore */}
+      {/* <Services onSelectPackage={handleSelectPackage} /> */}
       <Contact interestedIn={selectedInterest} setInterestedIn={setSelectedInterest} />
       <Footer />
     </>
