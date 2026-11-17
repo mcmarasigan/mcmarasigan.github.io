@@ -12,8 +12,8 @@ const projects = [
         thumb: '/payflow/payflow-screenshot2.png',
         tag: 'Enterprise HR & Payroll',
         desc: 'An Enterprise-Grade Philippine HRIS & Statutory Payroll Platform engineered with Laravel 13, React 19, and Tailwind CSS v4. Features automated 2025/2026 SSS (₱35k MSC), PhilHealth (5%), Pag-IBIG (₱10k cap), BIR TRAIN tax, DOLE overtime multipliers (1.25x–3.38x + 10% NSD), DomPDF payslips, and strict role-based separation of duties.',
-        link: '',
-        linkLabel: 'Private Repo',
+        link: 'https://github.com/mcmarasigan/payflow-ph',
+        linkLabel: 'GitHub',
         images: genImgs('payflow', 'payflow-screenshot', 20, 'png'),
         captions: [
             'Login Screen - Secure authentication portal featuring 1-Click Role Switcher across 5 demo profiles (Super Admin, HR, Payroll Officer, Finance, and Employee).',
